@@ -9,8 +9,6 @@ steps for script:
 get list o updates
 check to see if certain critical updates are missing
 then output names of missing updates
-prompt for script to automatically install it? **maybe if i have time**
-done
 
 *MAC*
 seapea, achilles, aeris, dark matter, nightskies, triton, dark mullet
@@ -26,7 +24,6 @@ https://support.apple.com/en-us/HT201222
 
 then output names of missing updates
 
-
 prompt for script to automatically install it?
 - sudo softwareupdate -i <name of update>
 done
@@ -36,20 +33,17 @@ done
 AngelFire (Xp/7), Dumbo (x32 XP/Vista/new versions), BothanSpy, Elsa, Brutal Kangaroo,
 Pandemic, Athena (XP and up), AfterMidnight, Grasshopper
 
-
 get list of updates
 see ps script
 
 check for missing updates
 - get list o updates for Vault 7
 
-
 output names of missing updates
 
 prompt script to automatically install?
 - looks like i'd need to do this to auto install updates
 https://gallery.technet.microsoft.com/scriptcenter/2d191bcd-3308-4edd-9de2-88dff796b0bc
-
 """
 
 import os
@@ -58,7 +52,7 @@ import platform
 # seapea[10.6, 10.7], achilles [10.6, all?], nightskies[10.5], triton [10.7, 10.8], dark mullet, Der Stare[10.8, 10.9]
 # aeris[malware], Sonic Screwdriver[firmware thing]
 # just update to 10.10 with latest Security updates?
-
+# check to make sure no VLC ver: 2.1.5, Notepad++ no 7.3.2 and Earlier, chrome newer than 55.0.2883
 
 def MacScanner():
     # get updates from system
@@ -68,6 +62,32 @@ def MacScanner():
 
     print("Mac Scanner")
 
+    affected_programs = [['VLC\\ Media\\ Player.app', ''],
+    ['Irfan\\ View.app', ''], ['Google\\ Chrome.app',''],
+    ['Opera.app', ''], ['Firefox.app',''], ['Thunderbird.app',''],
+    ['Opera\\ Mail.app',''], ['Foxit\\ Reader.app',''],
+    ['Libre\\ Office.app',''], ['Notepad++.app',''],
+    ['Skype.app',''], ['7-Zip.app',''], ['ClamWin.app',''],
+    ['Kasperksy\\ TDSS\\ Killer.app',''], ['McAfee\\ Stinger.app',''], ['Sophos\\ Virus\\ Removal.app',''], ['Prezi.app',''],
+    ['Babel\\ Pad.app',''], ['Iperius\\ Backup.app',''],
+    ['Sandisk\\ Secure',''], ['U3\\ Software.app',''], ['2048.app',''],
+    ['LBreakout2.app''']]
+
+    print(len(affected_programs))
+
+    print(affected_programs[0][0], affected_programs[0][1])
+    commands= []
+    for ap in affected_programs:
+        commands.append(''.join(['mdls /Applications/', ap[0], ' -name kMDItemVersion | awk -F \'\"\' \'{print $2}\'']))
+
+    print(len(commands))
+    for i in range(0, len(affected_programs)-1):
+        affected_programs[i][1] = os.popen(commands[i]).read().rstrip('\n')
+
+    print(affected_programs)
+
+
+#----------------------------------------------------------------------------
     os.system("defaults read loginwindow SystemVersionStampAsString > SystemVersion.txt")
 
     # check system OS. if older than 10.10 then proceed with updates check
@@ -139,6 +159,13 @@ def MacScanner():
 
 # AngelFire (Xp/7), Dumbo (x32 XP/Vista/new versions), BothanSpy, Elsa, Brutal Kangaroo,
 # Pandemic, Athena (XP and up), AfterMidnight, Grasshopper
+# DONT FORGET CHECKING APP VERSIONS
+# check to make sure no VLC ver: 2.1.5, Notepad++ no 7.3.2 and Earlier, chrome newer than 55.0.2883
+#
+""" all affected app versions, not all have patched it bc things
+VLC Media Player, Irfan View, Chrome, Opera, Firefox, Thunderbird, Opera Mail, Foxit Reader, Libre Office, Notepad++, Skype, 7-Zip, ClamWin, Kasperksy TDSS Killer, McAfee Stinger, Sophos Virus Removal, Prezi, Babel Pad, Iperius Backup, Sandisk Secure, U3 Software, 2048, LBreakout2
+"""
+
 def WindowsScanner():
     print("Windows Scanner")
 
@@ -157,7 +184,7 @@ def WindowsScanner():
     path = os.popen('cd').read()
     path = path.rstrip('\n')
 
-    full_path = ''.join(['Powershell.exe .\PS\getupdates.ps1 ', path, subdir_path])
+    full_path = ''.join(['Powershell.exe .\Windows\getupdates.ps1 ', path, subdir_path])
 
     # run PS script to get updates and put into file
     os.system(full_path)
