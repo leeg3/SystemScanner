@@ -168,10 +168,43 @@ VLC Media Player, Irfan View, Chrome, Opera, Firefox, Thunderbird, Opera Mail, F
 
 def WindowsScanner():
     print("Windows Scanner")
-
     os_info = os.popen('systeminfo | findstr /B /C:"OS Name" /C:"OS Version"').read()
     os_name = os_info[0].rstrip('\n')
     os_ver = os_info[1].rstrip('\n')
+
+    path = os.popen('cd').read()
+    path = path.rstrip('\n')
+
+    # exec script in PS with path given
+    full_path = ''.join(['Powershell.exe .\Windows\getappversions.ps1 ', path, '\Windows\AppVersions.txt'])
+
+# Application Checker
+# ---------------------------------------------------------------------------------------
+
+    print("Checking installed applications")
+    os.system(full_path)
+
+    app_contents = [app_contents.rstrip('\n') for app_contents in open('Windows\AppVersions.txt')]
+
+    print(app_contents)
+    app_info = []
+
+    for line in app_contents:
+        if line != '':
+            for i in range(0, len(line)):
+                if line[i].isdigit():
+                    line[i-1].replace(' ', ' :')
+            app_info.append(' '.join(line.split()))
+
+    print(app_info)
+
+    temp = "Hello 123"
+    print(temp[2])
+
+# System Checker
+# ---------------------------------------------------------------------------------------
+
+    print("Checking System")
 
     print(os_info)
 
@@ -180,11 +213,8 @@ def WindowsScanner():
     else:
         print('your ok')
 
-    subdir_path = '\Windows\InstalledUpdates.txt'
-    path = os.popen('cd').read()
-    path = path.rstrip('\n')
-
-    full_path = ''.join(['Powershell.exe .\Windows\getupdates.ps1 ', path, subdir_path])
+    # exec script in PS with path given
+    full_path = ''.join(['Powershell.exe .\Windows\getupdates.ps1 ', path, '\Windows\InstalledUpdates.txt'])
 
     # run PS script to get updates and put into file
     os.system(full_path)
