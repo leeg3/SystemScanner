@@ -1,299 +1,302 @@
 
 DisplayName                                                                         DisplayVersion
 -----------                                                                         --------------
-Battle.net
-
-Google Chrome                                                                       65.0.3325.181
-KeePass Password Safe 2.34                                                          2.34
-Microsoft Help Viewer 2.2                                                           2.2.24720
+Battle.net                                                                                        
+                                                                                                  
+Google Chrome                                                                       65.0.3325.181 
+KeePass Password Safe 2.34                                                          2.34          
+Microsoft Help Viewer 2.2                                                           2.2.24720     
 NVIDIA Stereoscopic 3D Driver                                                       7.17.13.7500  
-OpenAL
-Origin                                                                              10.3.3.1921
-Overwatch
-JetBrains PyCharm 2017.3.4                                                          173.4674.37
-Rockstar Games Social Club                                                          1.2.2.0
-Steam                                                                               2.10.91.91
-TmUnitedForever Update 2010-03-15
-Uplay                                                                               30.0
-
-Microsoft Visual Studio 2015 Shell (Minimum)                                        14.0.23107
-Microsoft .NET Framework 4.6 Targeting Pack (ENU)                                   4.6.00127
-Python 2.7.14                                                                       2.7.14150
-Universal CRT Redistributable                                                       10.0.26624
-Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501                        12.0.30501.0
-Windows Runtime Intellisense Content - en-us                                        8.100.25984
-Visual C++ MSBuild X64 Package                                                      14.0.24720
-Microsoft Visual Studio 2015 Shell (Minimum) Interop Assemblies                     14.0.24720
-Microsoft System CLR Types for SQL Server 2014                                      12.0.2402.29
-WCF Data Services Tools for Microsoft Visual Studio 2015                            5.6.62175.4
-Visual C++ IDE Windows Express Plus Package                                         14.0.23107
-Razer Synapse                                                                       2.21.18.115
-Visual C++ Compiler/Tools Premium X64 Native Package                                14.0.23506
-Visual C++ Compiler/Tools X86 X64 Cross Package                                     14.0.23506
-Visual C++ IDE Professional Plus Package                                            14.0.24720
-Update for Microsoft Visual Studio 2015 (KB3110221)                                 14.0.24730
-Microsoft Blend for Visual Studio 2015 - ENU                                        14.0.24720
-Mirror's Edge? Catalyst                                                             1.0.3.47248
-Microsoft Visual Studio Professional 2015                                           14.0.23107
-Multi-Device Hybrid Apps using C# - Templates - ENU                                 14.0.23107
-Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005                          12.0.21005
-Microsoft Blend for Visual Studio 2015                                              14.0.24720
-Microsoft Visual Studio Enterprise 2015                                             14.0.23107
-Visual C++ Compiler/Tools X86 ARM Cross Package                                     14.0.23506
- Tools for .Net 3.5                                                                 3.11.50727
-Microsoft Visual Studio 2015 Devenv Resources                                       14.0.23107
-Apple Software Update                                                               2.5.0.1
-Microsoft .NET Framework 4.5.1 SDK                                                  4.5.51641
-Microsoft .NET Framework 4.5.2 Multi-Targeting Pack                                 4.5.51651
-Windows Phone SDK 8.0 Assemblies for Visual Studio 2015                             14.0.24720
-Visual C++ Compiler/Tools Premium X64 X86 Cross Package                             14.0.23506
-
-
-
-
-
-
-
+OpenAL                                                                                            
+Origin                                                                              10.3.3.1921   
+Overwatch                                                                                         
+JetBrains PyCharm 2017.3.4                                                          173.4674.37   
+Rockstar Games Social Club                                                          1.2.2.0       
+Steam                                                                               2.10.91.91    
+TmUnitedForever Update 2010-03-15                                                                 
+Uplay                                                                               30.0          
+                                                                                                  
+Microsoft Visual Studio 2015 Shell (Minimum)                                        14.0.23107    
+Microsoft .NET Framework 4.6 Targeting Pack (ENU)                                   4.6.00127     
+Python 2.7.14                                                                       2.7.14150     
+Universal CRT Redistributable                                                       10.0.26624    
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501                        12.0.30501.0  
+Windows Runtime Intellisense Content - en-us                                        8.100.25984   
+Visual C++ MSBuild X64 Package                                                      14.0.24720    
+Microsoft Visual Studio 2015 Shell (Minimum) Interop Assemblies                     14.0.24720    
+Microsoft System CLR Types for SQL Server 2014                                      12.0.2402.29  
+WCF Data Services Tools for Microsoft Visual Studio 2015                            5.6.62175.4   
+Visual C++ IDE Windows Express Plus Package                                         14.0.23107    
+Razer Synapse                                                                       2.21.18.115   
+Visual C++ Compiler/Tools Premium X64 Native Package                                14.0.23506    
+Visual C++ Compiler/Tools X86 X64 Cross Package                                     14.0.23506    
+Visual C++ IDE Professional Plus Package                                            14.0.24720    
+Update for Microsoft Visual Studio 2015 (KB3110221)                                 14.0.24730    
+Microsoft Blend for Visual Studio 2015 - ENU                                        14.0.24720    
+Mirror's Edge? Catalyst                                                             1.0.3.47248   
+Microsoft Visual Studio Professional 2015                                           14.0.23107    
+Multi-Device Hybrid Apps using C# - Templates - ENU                                 14.0.23107    
+Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005                          12.0.21005    
+Microsoft Blend for Visual Studio 2015                                              14.0.24720    
+Microsoft Visual Studio Enterprise 2015                                             14.0.23107    
+Visual C++ Compiler/Tools X86 ARM Cross Package                                     14.0.23506    
+ Tools for .Net 3.5                                                                 3.11.50727    
+Microsoft Visual Studio 2015 Devenv Resources                                       14.0.23107    
+Apple Software Update                                                               2.5.0.1       
+Microsoft .NET Framework 4.5.1 SDK                                                  4.5.51641     
+Microsoft .NET Framework 4.5.2 Multi-Targeting Pack                                 4.5.51651     
+Windows Phone SDK 8.0 Assemblies for Visual Studio 2015                             14.0.24720    
+Visual C++ Compiler/Tools Premium X64 X86 Cross Package                             14.0.23506    
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
 AzureTools.Notifications                                                            2.7.30611.1601
-Visual C++ Library ATL Source Package                                               14.0.23026
-Visual C++ IDE Base Resource Package                                                14.0.24720
-Universal CRT Extension SDK                                                         10.0.26624
-Visual C++ Professional Templates Resource Package                                  14.0.23107
-Python 3.6.4 Tcl/Tk Support (32-bit)                                                3.6.4150.0
-Prerequisites for SSDT                                                              12.0.2000.8
+Visual C++ Library ATL Source Package                                               14.0.23026    
+Visual C++ IDE Base Resource Package                                                14.0.24720    
+Universal CRT Extension SDK                                                         10.0.26624    
+Visual C++ Professional Templates Resource Package                                  14.0.23107    
+Python 3.6.4 Tcl/Tk Support (32-bit)                                                3.6.4150.0    
+Prerequisites for SSDT                                                              12.0.2000.8   
 Microsoft Azure Shared Components for Visual Studio 2015 - v1.5                     1.5.30619.1602
-Microsoft Visual Studio 2015 Windows Diagnostic Tools - ENU                         14.0.24720
-Visual C++ Library CRT X86 Store Package                                            14.0.23506
-Visual C++ Library ATL X86 Package                                                  14.0.23026
-Microsoft SQL Server 2014 Management Objects                                        12.0.2000.8
-Python 3.6.4 Standard Library (32-bit)                                              3.6.4150.0
-Universal CRT Extension SDK                                                         10.0.10150
-Microsoft Visual Studio 2015 Profiling Tools                                        14.0.24720
-Microsoft .NET Framework 4.5.2 Multi-Targeting Pack (ENU)                           4.5.51209
-Visual C++ Compiler/Tools X86 Base Resource Package                                 14.0.23506
-Entity Framework 6.1.3 Tools  for Visual Studio 2015 Update 1                       14.0.41103.0
-Microsoft .NET Framework 4.6 Targeting Pack                                         4.6.00081
-Microsoft Visual Studio 2015 XAML Designer - ENU                                    14.0.24720
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Microsoft .NET Framework 4.6.1 SDK                                                  4.6.01055
-Roslyn Language Services - x86                                                      14.0.24730
-Microsoft.VisualStudio.Office365                                                    1.6.2.0
-Visual C++ Compiler/Tools Premium X86 Base Resource Package                         14.0.23506
-Visual C++ MSBuild ARM Package                                                      14.0.24720
-Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030                        11.0.61030.0
-Microsoft VisualStudio JavaScript Language Service                                  14.0.24720
-Visual C++ Compiler/Tools Premium X86 Native Resource Package                       14.0.23506
-Microsoft Visual Studio 2015 Update 1 IntelliTrace (x86)                            14.0.24720
-Windows Software Development Kit for Windows Store Apps                             8.100.26936
-Visual C++ Compiler/Tools X64 Native Package                                        14.0.23506
-Blend for Visual Studio SDK for .NET 4.5                                            3.0.40218.0
-Visual C++ Library CRT X86 Redist Package                                           14.0.23506
-Visual C++ Library CRT X64 Store Package                                            14.0.23506
-Visual C++ Compiler/Tools X64 Native Resource Package                               14.0.23506
-Visual C++ Professional Items Package                                               14.0.23107
-Visual C++ Compiler/Tools X64 Base Package                                          14.0.23506
-Visual C++ Library CRT Redist Resource Package                                      14.0.23506
-Visual C++ MSBuild X86 Package                                                      14.0.24720
-Visual C++ Library ATL Headers Package                                              14.0.23026
-Microsoft Build Tools 14.0 (x86)                                                    14.0.24730
-Azure AD Authentication Connected Service                                           14.0.23107
-Windows Espc Package                                                                14.0.23107
-Microsoft Build Tools Language Resources 14.0 (x86)                                 14.0.24720
-PreEmptive Analytics Visual Studio Components                                       1.2.5134.1
-Microsoft ASP.NET MVC 4 - Visual Studio 2015 - ENU                                  4.1.41102.0
-Visual C++ Library CRT ARM Store Package                                            14.0.23506
-Python 3.6.4 Executables (32-bit)                                                   3.6.4150.0
-Microsoft SQL Server 2014 T-SQL Language Service                                    12.0.2000.8
-Team Explorer for Microsoft Visual Studio 2015                                      14.0.24712
-Visual C++ Library CRT ARM Redist Package                                           14.0.23506
-Microsoft Visual Studio Professional 2015 - ENU                                     14.0.23107
-Java Auto Updater                                                                   2.8.161.12
-Microsoft NuGet - Visual Studio 2015                                                3.3.0.167
-Dotfuscator and Analytics Community Edition 5.19.0                                  5.19.0.2930
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Visual C++ Library MFC Headers Package                                              14.0.23506
-Visual C++ Professional Items Resource Package                                      14.0.23107
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Visual C++ CRT Headers Package                                                      14.0.23506
-Python 3.6.4 pip Bootstrap (32-bit)                                                 3.6.4150.0
-Visual C++ Library ATL ARM Package                                                  14.0.23026
+Microsoft Visual Studio 2015 Windows Diagnostic Tools - ENU                         14.0.24720    
+Visual C++ Library CRT X86 Store Package                                            14.0.23506    
+Visual C++ Library ATL X86 Package                                                  14.0.23026    
+Microsoft SQL Server 2014 Management Objects                                        12.0.2000.8   
+Python 3.6.4 Standard Library (32-bit)                                              3.6.4150.0    
+Universal CRT Extension SDK                                                         10.0.10150    
+Microsoft Visual Studio 2015 Profiling Tools                                        14.0.24720    
+Microsoft .NET Framework 4.5.2 Multi-Targeting Pack (ENU)                           4.5.51209     
+Visual C++ Compiler/Tools X86 Base Resource Package                                 14.0.23506    
+Entity Framework 6.1.3 Tools  for Visual Studio 2015 Update 1                       14.0.41103.0  
+Microsoft .NET Framework 4.6 Targeting Pack                                         4.6.00081     
+Microsoft Visual Studio 2015 XAML Designer - ENU                                    14.0.24720    
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Microsoft .NET Framework 4.6.1 SDK                                                  4.6.01055     
+Roslyn Language Services - x86                                                      14.0.24730    
+Microsoft.VisualStudio.Office365                                                    1.6.2.0       
+Visual C++ Compiler/Tools Premium X86 Base Resource Package                         14.0.23506    
+Visual C++ MSBuild ARM Package                                                      14.0.24720    
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030                        11.0.61030.0  
+Microsoft VisualStudio JavaScript Language Service                                  14.0.24720    
+Visual C++ Compiler/Tools Premium X86 Native Resource Package                       14.0.23506    
+Microsoft Visual Studio 2015 Update 1 IntelliTrace (x86)                            14.0.24720    
+Windows Software Development Kit for Windows Store Apps                             8.100.26936   
+Visual C++ Compiler/Tools X64 Native Package                                        14.0.23506    
+Blend for Visual Studio SDK for .NET 4.5                                            3.0.40218.0   
+Visual C++ Library CRT X86 Redist Package                                           14.0.23506    
+Visual C++ Library CRT X64 Store Package                                            14.0.23506    
+Visual C++ Compiler/Tools X64 Native Resource Package                               14.0.23506    
+Visual C++ Professional Items Package                                               14.0.23107    
+Visual C++ Compiler/Tools X64 Base Package                                          14.0.23506    
+Visual C++ Library CRT Redist Resource Package                                      14.0.23506    
+Visual C++ MSBuild X86 Package                                                      14.0.24720    
+Visual C++ Library ATL Headers Package                                              14.0.23026    
+Microsoft Build Tools 14.0 (x86)                                                    14.0.24730    
+Azure AD Authentication Connected Service                                           14.0.23107    
+Windows Espc Package                                                                14.0.23107    
+Microsoft Build Tools Language Resources 14.0 (x86)                                 14.0.24720    
+PreEmptive Analytics Visual Studio Components                                       1.2.5134.1    
+Microsoft ASP.NET MVC 4 - Visual Studio 2015 - ENU                                  4.1.41102.0   
+Visual C++ Library CRT ARM Store Package                                            14.0.23506    
+Python 3.6.4 Executables (32-bit)                                                   3.6.4150.0    
+Microsoft SQL Server 2014 T-SQL Language Service                                    12.0.2000.8   
+Team Explorer for Microsoft Visual Studio 2015                                      14.0.24712    
+Visual C++ Library CRT ARM Redist Package                                           14.0.23506    
+Microsoft Visual Studio Professional 2015 - ENU                                     14.0.23107    
+Java Auto Updater                                                                   2.8.161.12    
+Microsoft NuGet - Visual Studio 2015                                                3.3.0.167     
+Dotfuscator and Analytics Community Edition 5.19.0                                  5.19.0.2930   
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Visual C++ Library MFC Headers Package                                              14.0.23506    
+Visual C++ Professional Items Resource Package                                      14.0.23107    
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Visual C++ CRT Headers Package                                                      14.0.23506    
+Python 3.6.4 pip Bootstrap (32-bit)                                                 3.6.4150.0    
+Visual C++ Library ATL ARM Package                                                  14.0.23026    
 Microsoft Azure Mobile Services Tools for Visual Studio - v1.4                      1.4.30611.1601
-Windows Software Development Kit for Windows Store Apps DirectX x86 Remote          8.100.26936
-Microsoft .NET Framework 4.5 Multi-Targeting Pack                                   4.5.50710
-Microsoft SQL Server Data Tools - enu (14.0.50616.0)                                14.0.50616.0
-Visual C++ Compiler/Tools Premium X86 Native Package                                14.0.23506
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Microsoft Visual Studio Community 2015 - ENU                                        14.0.23107
-Visual C++ IDE Optional MFC Support Package                                         14.0.23107
-Visual C++ MSBuild Base Package                                                     14.0.24720
-Visual C++ Library ATL X64 Package                                                  14.0.23026
-En Masse Launcher                                                                   1.0
-TypeScript Tools for Microsoft Visual Studio 2015 1.7.6.0                           1.7.24809.0
-VS Update core components                                                           14.0.24720
-Visual C++ MFC Items Resource Package                                               14.0.23107
-Visual C++ Library MFC MBCS Package                                                 14.0.23506
-Google Update Helper                                                                1.3.33.7
-Microsoft ASP.NET Web Frameworks and Tools - Visual Studio 2015 - ENU               5.2.30624.0
-Visual C++ IDE Base Package                                                         14.0.24730
-Microsoft Visual Studio 2015 XAML Visual Diagnostics - ENU                          14.0.24720
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Microsoft Visual Studio 2015 XAML Application Timeline - ENU                        14.0.24720
-Microsoft ASP.NET Web Pages 2 - Visual Studio 2015 - ENU                            4.1.41102.0
-Microsoft Visual Studio 2015 Preparation                                            14.0.23107
-Microsoft Visual Studio 2015 XAML Application Timeline                              14.0.24720
-Microsoft Visual Studio Premium 2015                                                14.0.23107
-Visual C++ Compiler/Tools Premium ARM Base Package                                  14.0.23506
-Microsoft Visual Studio 2015 SDK - ENU                                              14.0.23107
-Microsoft .NET Framework 4.5.1 Multi-Targeting Pack                                 4.5.50932
-Roslyn Language Services - x86                                                      14.0.23107
-Visual C++ Compiler/Tools X64 ARM Cross Package                                     14.0.23506
-Visual C++ Library MFC X86 Package                                                  14.0.23506
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Visual C++ Compiler/Tools X86 X64 Cross Resource Package                            14.0.23506
-Visual C++ IDE Desktop Plus Resource Package                                        14.0.23107
-Microsoft Azure Storage Connected Service                                           14.0.24720
-Visual C++ Compiler/Tools Premium ARM Base Resource Package                         14.0.23506
-Visual C++ Compiler/Tools Premium X64 Base Resource Package                         14.0.23506
-Microsoft Visual Studio 2015 Shell (Minimum) Resources                              14.0.23107
-Visual C++ Library MFC Source Package                                               14.0.23506
-Python Tools 2.2.2 for Visual Studio 2015                                           2.2.31124.00
-Visual C++ IDE Common Package                                                       14.0.24720
-Microsoft Visual Studio 2015 Update 1 Diagnostic Tools - x86                        14.0.24720
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-TP-LINK TL-WN781ND Driver                                                           1.3.1
-Visual C++ Compiler/Tools Premium X64 X86 Cross Resource Package                    14.0.23506
-Microsoft Silverlight                                                               5.1.20513.0
-Visual C++ Compiler/Tools X86 Base Package                                          14.0.23506
-Microsoft .NET Framework 4.6.1 Targeting Pack                                       4.6.01055
-Visual C++ Compiler/Tools X64 X86 Cross Package                                     14.0.23506
-Universal CRT Headers Libraries and Sources                                         10.0.26624
-Microsoft .NET Framework 4.6.1 Targeting Pack (ENU)                                 4.6.01055
-Visual C++ Compiler/Tools Premium X64 Base Package                                  14.0.23506
-Visual C++ MFC Items Package                                                        14.0.23107
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Microsoft Visual Studio 2015 Preparation                                            14.0.23107
-Visual C++ Compiler/Tools X64 X86 Cross Resource Package                            14.0.23506
-Microsoft Visual Studio 2015 Preparation                                            14.0.23107
-Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.60610                        11.0.60610.1
-Visual C++ Library CRT ARM Desktop Package                                          14.0.23506
-Visual C++ Compiler/Tools X64 Base Resource Package                                 14.0.23506
-Microsoft .NET Framework 4.5.1 RC Multi-Targeting Pack for Windows Store Apps       4.5.21005
-Microsoft Visual Studio 2015 Update 1 Performance Debugger Web Views                14.0.24720
-Windows Software Development Kit                                                    8.100.26936
-Microsoft Expression Blend SDK for .NET 4                                           2.0.20525.0
+Windows Software Development Kit for Windows Store Apps DirectX x86 Remote          8.100.26936   
+Microsoft .NET Framework 4.5 Multi-Targeting Pack                                   4.5.50710     
+Microsoft SQL Server Data Tools - enu (14.0.50616.0)                                14.0.50616.0  
+Visual C++ Compiler/Tools Premium X86 Native Package                                14.0.23506    
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Microsoft Visual Studio Community 2015 - ENU                                        14.0.23107    
+Visual C++ IDE Optional MFC Support Package                                         14.0.23107    
+Visual C++ MSBuild Base Package                                                     14.0.24720    
+Visual C++ Library ATL X64 Package                                                  14.0.23026    
+En Masse Launcher                                                                   1.0           
+TypeScript Tools for Microsoft Visual Studio 2015 1.7.6.0                           1.7.24809.0   
+VS Update core components                                                           14.0.24720    
+Visual C++ MFC Items Resource Package                                               14.0.23107    
+Visual C++ Library MFC MBCS Package                                                 14.0.23506    
+Google Update Helper                                                                1.3.33.7      
+Microsoft ASP.NET Web Frameworks and Tools - Visual Studio 2015 - ENU               5.2.30624.0   
+Visual C++ IDE Base Package                                                         14.0.24730    
+Microsoft Visual Studio 2015 XAML Visual Diagnostics - ENU                          14.0.24720    
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Microsoft Visual Studio 2015 XAML Application Timeline - ENU                        14.0.24720    
+Microsoft ASP.NET Web Pages 2 - Visual Studio 2015 - ENU                            4.1.41102.0   
+Microsoft Visual Studio 2015 Preparation                                            14.0.23107    
+Microsoft Visual Studio 2015 XAML Application Timeline                              14.0.24720    
+Microsoft Visual Studio Premium 2015                                                14.0.23107    
+Visual C++ Compiler/Tools Premium ARM Base Package                                  14.0.23506    
+Microsoft Visual Studio 2015 SDK - ENU                                              14.0.23107    
+Microsoft .NET Framework 4.5.1 Multi-Targeting Pack                                 4.5.50932     
+Roslyn Language Services - x86                                                      14.0.23107    
+Visual C++ Compiler/Tools X64 ARM Cross Package                                     14.0.23506    
+Visual C++ Library MFC X86 Package                                                  14.0.23506    
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Visual C++ Compiler/Tools X86 X64 Cross Resource Package                            14.0.23506    
+Visual C++ IDE Desktop Plus Resource Package                                        14.0.23107    
+Microsoft Azure Storage Connected Service                                           14.0.24720    
+Visual C++ Compiler/Tools Premium ARM Base Resource Package                         14.0.23506    
+Visual C++ Compiler/Tools Premium X64 Base Resource Package                         14.0.23506    
+Microsoft Visual Studio 2015 Shell (Minimum) Resources                              14.0.23107    
+Visual C++ Library MFC Source Package                                               14.0.23506    
+Python Tools 2.2.2 for Visual Studio 2015                                           2.2.31124.00  
+Visual C++ IDE Common Package                                                       14.0.24720    
+Microsoft Visual Studio 2015 Update 1 Diagnostic Tools - x86                        14.0.24720    
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+TP-LINK TL-WN781ND Driver                                                           1.3.1         
+Visual C++ Compiler/Tools Premium X64 X86 Cross Resource Package                    14.0.23506    
+Microsoft Silverlight                                                               5.1.20513.0   
+Visual C++ Compiler/Tools X86 Base Package                                          14.0.23506    
+Microsoft .NET Framework 4.6.1 Targeting Pack                                       4.6.01055     
+Visual C++ Compiler/Tools X64 X86 Cross Package                                     14.0.23506    
+Universal CRT Headers Libraries and Sources                                         10.0.26624    
+Microsoft .NET Framework 4.6.1 Targeting Pack (ENU)                                 4.6.01055     
+Visual C++ Compiler/Tools Premium X64 Base Package                                  14.0.23506    
+Visual C++ MFC Items Package                                                        14.0.23107    
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Microsoft Visual Studio 2015 Preparation                                            14.0.23107    
+Visual C++ Compiler/Tools X64 X86 Cross Resource Package                            14.0.23506    
+Microsoft Visual Studio 2015 Preparation                                            14.0.23107    
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.60610                        11.0.60610.1  
+Visual C++ Library CRT ARM Desktop Package                                          14.0.23506    
+Visual C++ Compiler/Tools X64 Base Resource Package                                 14.0.23506    
+Microsoft .NET Framework 4.5.1 RC Multi-Targeting Pack for Windows Store Apps       4.5.21005     
+Microsoft Visual Studio 2015 Update 1 Performance Debugger Web Views                14.0.24720    
+Windows Software Development Kit                                                    8.100.26936   
+Microsoft Expression Blend SDK for .NET 4                                           2.0.20525.0   
 Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161                      9.0.30729.6161
-Test Tools for Microsoft Visual Studio 2015                                         14.0.23107
-osu!                                                                                latest
-Microsoft Azure Mobile Services SDK V2.0                                            2.0.20908.0
-Visual C++ Compiler/Tools Premium X86 ARM Cross Resource Package                    14.0.23506
-Windows Software Development Kit DirectX x86 Remote                                 8.100.25984
-Visual C++ Library PGO X86 Package                                                  14.0.23506
-Microsoft .NET Framework 4.5.1 RC Multi-Targeting Pack for Windows Store Apps (ENU) 4.5.21005
-Visual C++ Compiler/Tools Premium X64 ARM Cross Package                             14.0.23506
-Visual C++ Compiler/Tools X86 Native Package                                        14.0.23506
-Visual C++ Library CRT X64 Redist Package                                           14.0.23506
-Microsoft Azure Mobile Services Connected Service                                   14.0.23107
-Microsoft Visual Studio 2015 Update 1 Diagnostic Tools - x86                        14.0.24720
-Microsoft Portable Library Multi-Targeting Pack Language Pack - enu                 14.0.24720.00
-Visual C++ Compiler/Tools Premium X86 Base Package                                  14.0.23506
-Universal CRT Headers Libraries and Sources                                         10.0.10150
-Microsoft Portable Library Multi-Targeting Pack                                     14.0.24720.00
-Microsoft Visual Studio 2015 Update 1 IntelliTrace Front End                        14.0.24720
-Visual C++ Library PGO X64 Package                                                  14.0.23506
-Universal CRT Tools x86                                                             10.0.26624
-Visual C++ Library CRT X86 Desktop Package                                          14.0.23506
-Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030                       11.0.61030
-Visual C++ Compiler/Tools X86 Native Resource Package                               14.0.23506
-Microsoft Visual Studio 2015 XAML Visual Diagnostics                                14.0.24720
-Python Launcher                                                                     3.6.6196.0
-Microsoft Agents for Visual Studio 2015 Preview - ENU                               14.0.23102
-Microsoft .NET Framework 4.6 SDK                                                    4.6.00081
-Microsoft Visual Studio Enterprise 2015 - ENU                                       14.0.23107
-Visual C++ IDE Optional Desktop Support Package                                     14.0.23107
-Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030                          11.0.61030
-Microsoft Help Viewer 2.2                                                           2.2.24720
-Microsoft Visual C++ 2017 Redistributable (x86) - 14.10.25008                       14.10.25008.0
-Microsoft Visual Studio Connected Services                                          14.0.24720
-Python 3.6.4 Development Libraries (32-bit)                                         3.6.4150.0
-Visual C++ Compiler/Tools Premium X86 X64 Cross Package                             14.0.23506
-Visual C++ Library PGO ARM Package                                                  14.0.23506
-Visual C++ IDE Professional Core Package                                            14.0.24720
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Launcher Prerequisites (x64)                                                        1.0.0.0
-Microsoft Visual C++ 2017 x86 Minimum Runtime - 14.10.25008                         14.10.25008
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Microsoft .NET Core 5.0 SDK                                                         1.0.23224
-Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030                        11.0.61030.0
-Microsoft .NET Framework 4.6.1 Developer Pack                                       4.6.1055
-Visual C++ IDE Core Package                                                         14.0.24720
-Visual C++ Compiler/Tools X86 Base Resource Package                                 14.0.23506
-Microsoft Agents for Visual Studio 2015 Preview                                     14.0.23102
-Microsoft Visual C++ 2015 x86 Debug Runtime - 14.0.23506                            14.0.23506
-TypeScript Power Tool                                                               1.7.6.0
-Visual C++ IDE Optional XP Support Package                                          14.0.23107
-Microsoft .NET Framework 4 Multi-Targeting Pack                                     4.0.30319
-Update for  (KB2504637)                                                             1
-Python 3.6.4 Utility Scripts (32-bit)                                               3.6.4150.0
-Python 3.6.4 Test Suite (32-bit)                                                    3.6.4150.0
-Python 3.6.4 Core Interpreter (32-bit)                                              3.6.4150.0
-Microsoft Visual Studio 2015 Windows Diagnostic Tools                               14.0.24720
-Application Insights Tools for Visual Studio 2015                                   4.3.60226.3
-Visual C++ IDE Debugger Resource Package                                            14.0.24720
-Microsoft .NET Framework 4.5.1 Multi-Targeting Pack (ENU)                           4.5.50932
-Apple Application Support (32-bit)                                                  6.3
-Visual C++ Compiler/Tools Premium X64 ARM Cross Resource Package                    14.0.23506
-Microsoft Visual Studio Premium 2015 - ENU                                          14.0.23107
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Microsoft Visual Studio Services Hub                                                1.0.24720.00
-WCF Data Services 5.6.4 Runtime                                                     5.6.62175.4
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Microsoft Visual Studio Community 2015                                              14.0.23107
-Microsoft Visual Studio 2015 XAML Designer                                          14.0.24720
-Visual C++ Library MFC X64 Package                                                  14.0.23506
-Python 3.6.4 Documentation (32-bit)                                                 3.6.4150.0
-Visual C++ MSBuild Base Resource Package                                            14.0.24720
-Visual C++ Library CRT X64 Desktop Package                                          14.0.23506
-Microsoft Visual Studio 2015 Test Tools Language Pack - ENU                         14.0.23107
-Visual C++ Professional Templates Package                                           14.0.24720
-Microsoft Visual C++ 2017 x86 Additional Runtime - 14.10.25008                      14.10.25008
-Visual C++ IDE Base Resource Package                                                14.0.23107
-Visual C++ Compiler/Tools X86 ARM Cross Resource Package                            14.0.23506
-Visual C++ Library PGO X86 Package                                                  14.0.23506
-Visual C++ Compiler/Tools X64 ARM Cross Resource Package                            14.0.23506
-Visual C++ Library PGO Headers Package                                              14.0.23506
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Visual C++ Compiler/Tools X86 Base Package                                          14.0.23506
-Visual C++ IDE Desktop Plus Package                                                 14.0.23107
-Visual C++ Compiler/Tools Premium X86 X64 Cross Resource Package                    14.0.23506
-Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219                         10.0.40219
+Test Tools for Microsoft Visual Studio 2015                                         14.0.23107    
+osu!                                                                                latest        
+Microsoft Azure Mobile Services SDK V2.0                                            2.0.20908.0   
+Visual C++ Compiler/Tools Premium X86 ARM Cross Resource Package                    14.0.23506    
+Windows Software Development Kit DirectX x86 Remote                                 8.100.25984   
+Visual C++ Library PGO X86 Package                                                  14.0.23506    
+Microsoft .NET Framework 4.5.1 RC Multi-Targeting Pack for Windows Store Apps (ENU) 4.5.21005     
+Visual C++ Compiler/Tools Premium X64 ARM Cross Package                             14.0.23506    
+Visual C++ Compiler/Tools X86 Native Package                                        14.0.23506    
+Visual C++ Library CRT X64 Redist Package                                           14.0.23506    
+Microsoft Azure Mobile Services Connected Service                                   14.0.23107    
+Microsoft Visual Studio 2015 Update 1 Diagnostic Tools - x86                        14.0.24720    
+Microsoft Portable Library Multi-Targeting Pack Language Pack - enu                 14.0.24720.00 
+Visual C++ Compiler/Tools Premium X86 Base Package                                  14.0.23506    
+Universal CRT Headers Libraries and Sources                                         10.0.10150    
+Microsoft Portable Library Multi-Targeting Pack                                     14.0.24720.00 
+Microsoft Visual Studio 2015 Update 1 IntelliTrace Front End                        14.0.24720    
+Visual C++ Library PGO X64 Package                                                  14.0.23506    
+Universal CRT Tools x86                                                             10.0.26624    
+Visual C++ Library CRT X86 Desktop Package                                          14.0.23506    
+Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030                       11.0.61030    
+Visual C++ Compiler/Tools X86 Native Resource Package                               14.0.23506    
+Microsoft Visual Studio 2015 XAML Visual Diagnostics                                14.0.24720    
+Python Launcher                                                                     3.6.6196.0    
+Microsoft Agents for Visual Studio 2015 Preview - ENU                               14.0.23102    
+Microsoft .NET Framework 4.6 SDK                                                    4.6.00081     
+Microsoft Visual Studio Enterprise 2015 - ENU                                       14.0.23107    
+Visual C++ IDE Optional Desktop Support Package                                     14.0.23107    
+Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030                          11.0.61030    
+Microsoft Help Viewer 2.2                                                           2.2.24720     
+Microsoft Visual C++ 2017 Redistributable (x86) - 14.10.25008                       14.10.25008.0 
+Microsoft Visual Studio Connected Services                                          14.0.24720    
+Python 3.6.4 Development Libraries (32-bit)                                         3.6.4150.0    
+Visual C++ Compiler/Tools Premium X86 X64 Cross Package                             14.0.23506    
+Visual C++ Library PGO ARM Package                                                  14.0.23506    
+Visual C++ IDE Professional Core Package                                            14.0.24720    
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Launcher Prerequisites (x64)                                                        1.0.0.0       
+Microsoft Visual C++ 2017 x86 Minimum Runtime - 14.10.25008                         14.10.25008   
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Microsoft .NET Core 5.0 SDK                                                         1.0.23224     
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030                        11.0.61030.0  
+Microsoft .NET Framework 4.6.1 Developer Pack                                       4.6.1055      
+Visual C++ IDE Core Package                                                         14.0.24720    
+Visual C++ Compiler/Tools X86 Base Resource Package                                 14.0.23506    
+Microsoft Agents for Visual Studio 2015 Preview                                     14.0.23102    
+Microsoft Visual C++ 2015 x86 Debug Runtime - 14.0.23506                            14.0.23506    
+TypeScript Power Tool                                                               1.7.6.0       
+Visual C++ IDE Optional XP Support Package                                          14.0.23107    
+Microsoft .NET Framework 4 Multi-Targeting Pack                                     4.0.30319     
+Update for  (KB2504637)                                                             1             
+Python 3.6.4 Utility Scripts (32-bit)                                               3.6.4150.0    
+Python 3.6.4 Test Suite (32-bit)                                                    3.6.4150.0    
+Python 3.6.4 Core Interpreter (32-bit)                                              3.6.4150.0    
+Microsoft Visual Studio 2015 Windows Diagnostic Tools                               14.0.24720    
+Application Insights Tools for Visual Studio 2015                                   4.3.60226.3   
+Visual C++ IDE Debugger Resource Package                                            14.0.24720    
+Microsoft .NET Framework 4.5.1 Multi-Targeting Pack (ENU)                           4.5.50932     
+Apple Application Support (32-bit)                                                  6.3           
+Visual C++ Compiler/Tools Premium X64 ARM Cross Resource Package                    14.0.23506    
+Microsoft Visual Studio Premium 2015 - ENU                                          14.0.23107    
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Microsoft Visual Studio Services Hub                                                1.0.24720.00  
+WCF Data Services 5.6.4 Runtime                                                     5.6.62175.4   
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Microsoft Visual Studio Community 2015                                              14.0.23107    
+Microsoft Visual Studio 2015 XAML Designer                                          14.0.24720    
+Visual C++ Library MFC X64 Package                                                  14.0.23506    
+Python 3.6.4 Documentation (32-bit)                                                 3.6.4150.0    
+Visual C++ MSBuild Base Resource Package                                            14.0.24720    
+Visual C++ Library CRT X64 Desktop Package                                          14.0.23506    
+Microsoft Visual Studio 2015 Test Tools Language Pack - ENU                         14.0.23107    
+Visual C++ Professional Templates Package                                           14.0.24720    
+Microsoft Visual C++ 2017 x86 Additional Runtime - 14.10.25008                      14.10.25008   
+Visual C++ IDE Base Resource Package                                                14.0.23107    
+Visual C++ Compiler/Tools X86 ARM Cross Resource Package                            14.0.23506    
+Visual C++ Library PGO X86 Package                                                  14.0.23506    
+Visual C++ Compiler/Tools X64 ARM Cross Resource Package                            14.0.23506    
+Visual C++ Library PGO Headers Package                                              14.0.23506    
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Visual C++ Compiler/Tools X86 Base Package                                          14.0.23506    
+Visual C++ IDE Desktop Plus Package                                                 14.0.23107    
+Visual C++ Compiler/Tools Premium X86 X64 Cross Resource Package                    14.0.23506    
+Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219                         10.0.40219    
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+Intel(R) Processor Graphics                                                         20.19.15.4331 
+Microsoft Visual C++ 2017 Redistributable (x64) - 14.10.25008                       14.10.25008.0 
+Visual C++ IDE Common Resource Package                                              14.0.24720    
+Microsoft Visual Studio 2015 Update 1 Diagnostic Tools - x86                        14.0.24720    
+Windows XP Targeting with C++                                                       11.0.51106    
+Windows App Certification Kit x64                                                   8.100.26795   
+Microsoft Visual Studio 2015 Team Explorer Language Pack - ENU                      14.0.24712    
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501                        12.0.30501.0  
+TypeScript Tools for Microsoft Visual Studio 2015                                   1.7.6.0       
+Visual C++ Compiler/Tools Premium X64 Native Resource Package                       14.0.23506    
+Microsoft ASP.NET and Web Tools 2015.1 (Beta8) - Visual Studio 2015                 14.1.11106.0  
+Microsoft VisualStudio JavaScript Project System                                    14.0.24720    
+Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005                       12.0.21005    
+Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
+Microsoft Visual Studio Enterprise 2015 with Updates                                14.0.24720.41 
+Visual C++ IDE Professional Plus Resource Package                                   14.0.23107    
+Microsoft Visual Studio 2015 Update 1 Diagnostic Tools - ENU                        14.0.24720    
+Visual C++ IDE Debugger Package                                                     14.0.24720    
+MSBuild/NuGet Integration 14.0 (x86)                                                14.0.24720    
+Microsoft Visual Studio 2015 Devenv                                                 14.0.23107    
+Windows Espc Resource Package                                                       14.0.23107    
+Visual Studio 2015 Update 1 (KB3022398)                                             14.0.24720    
+Visual C++ Compiler/Tools Premium X86 ARM Cross Package                             14.0.23506    
+Visual C++ Library CRT Source Package                                               14.0.23506    
+                                                                                                  
 
 
-
-
-
-
-
-Intel(R) Processor Graphics                                                         20.19.15.4331
-Microsoft Visual C++ 2017 Redistributable (x64) - 14.10.25008                       14.10.25008.0
-Visual C++ IDE Common Resource Package                                              14.0.24720
-Microsoft Visual Studio 2015 Update 1 Diagnostic Tools - x86                        14.0.24720
-Windows XP Targeting with C++                                                       11.0.51106
-Windows App Certification Kit x64                                                   8.100.26795
-Microsoft Visual Studio 2015 Team Explorer Language Pack - ENU                      14.0.24712
-Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501                        12.0.30501.0
-TypeScript Tools for Microsoft Visual Studio 2015                                   1.7.6.0
-Visual C++ Compiler/Tools Premium X64 Native Resource Package                       14.0.23506
-Microsoft ASP.NET and Web Tools 2015.1 (Beta8) - Visual Studio 2015                 14.1.11106.0
-Microsoft VisualStudio JavaScript Project System                                    14.0.24720
-Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005                       12.0.21005
-Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720
-Microsoft Visual Studio Enterprise 2015 with Updates                                14.0.24720.41
-Visual C++ IDE Professional Plus Resource Package                                   14.0.23107
-Microsoft Visual Studio 2015 Update 1 Diagnostic Tools - ENU                        14.0.24720
-Visual C++ IDE Debugger Package                                                     14.0.24720
-MSBuild/NuGet Integration 14.0 (x86)                                                14.0.24720
-Microsoft Visual Studio 2015 Devenv                                                 14.0.23107
-Windows Espc Resource Package                                                       14.0.23107
-Visual Studio 2015 Update 1 (KB3022398)                                             14.0.24720
-Visual C++ Compiler/Tools Premium X86 ARM Cross Package                             14.0.23506
-Visual C++ Library CRT Source Package                                               14.0.23506

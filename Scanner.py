@@ -76,7 +76,7 @@ def MacScanner():
     print(len(affected_programs))
 
     print(affected_programs[0][0], affected_programs[0][1])
-    commands= []
+    commands = []
     for ap in affected_programs:
         commands.append(''.join(['mdls /Applications/', ap[0], ' -name kMDItemVersion | awk -F \'\"\' \'{print $2}\'']))
 
@@ -87,7 +87,8 @@ def MacScanner():
     print(affected_programs)
 
 
-#----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
+
     os.system("defaults read loginwindow SystemVersionStampAsString > SystemVersion.txt")
 
     # check system OS. if older than 10.10 then proceed with updates check
@@ -163,14 +164,13 @@ def MacScanner():
 # check to make sure no VLC ver: 2.1.5, Notepad++ no 7.3.2 and Earlier, chrome newer than 55.0.2883
 #
 """ all affected app versions, not all have patched it bc things
-VLC Media Player, Irfan View, Chrome, Opera, Firefox, Thunderbird, Opera Mail, Foxit Reader, Libre Office, Notepad++, Skype, 7-Zip, ClamWin, Kasperksy TDSS Killer, McAfee Stinger, Sophos Virus Removal, Prezi, Babel Pad, Iperius Backup, Sandisk Secure, U3 Software, 2048, LBreakout2
+VLC Media Player, Irfan View, Chrome, Firefox, Thunderbird, Libre Office, Notepad++, Skype, 7-Zip, ClamWin, 
+Kasperksy TDSS Killer, McAfee Stinger, Sophos Virus Removal, Prezi, Babel Pad, Iperius Backup, Sandisk Secure,
+ U3 Software, 2048, LBreakout2
 """
 
 def WindowsScanner():
     print("Windows Scanner")
-    os_info = os.popen('systeminfo | findstr /B /C:"OS Name" /C:"OS Version"').read()
-    os_name = os_info[0].rstrip('\n')
-    os_ver = os_info[1].rstrip('\n')
 
     path = os.popen('cd').read()
     path = path.rstrip('\n')
@@ -188,31 +188,42 @@ def WindowsScanner():
 
     print(app_contents)
     app_info = []
+    temp = ''
 
     for line in app_contents:
         if line != '':
             for i in range(0, len(line)):
                 if line[i].isdigit():
-                    line[i-1].replace(' ', ' :')
+                    temp = line[i-1].replace(' ', ' :')
+            #print(temp)
             app_info.append(' '.join(line.split()))
 
     print(app_info)
 
-    temp = "Hello 123"
-    print(temp[2])
+    temp = "KeePass Password Safe 2.34 2.34"
+    print(temp[22])
 
 # System Checker
 # ---------------------------------------------------------------------------------------
+
+    os_info = os.popen('systeminfo | findstr /B /C:"OS Name" /C:"OS Version"').read()
+    os_name = os_info[0].rstrip('\n')
+    os_ver = os_info[1].rstrip('\n')
 
     print("Checking System")
 
     print(os_info)
 
-    if 'XP, Vista, 7, 8' in os_name:
-        print('YOU GONNA ESPLODE')
-    else:
-        print('your ok')
+    affected_os = ['XP', 'Vista', '7', '8', '10']
+    status = ''
 
+    for os in affected_os:
+        if os in os_name:
+            status = 'YOU GONNA ESPLODE'
+        else:
+            status = 'your ok'
+
+    print(status)
     # exec script in PS with path given
     full_path = ''.join(['Powershell.exe .\Windows\getupdates.ps1 ', path, '\Windows\InstalledUpdates.txt'])
 
