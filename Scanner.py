@@ -53,11 +53,12 @@ import platform
 # aeris[malware], Sonic Screwdriver[firmware thing]
 # just update to 10.10 with latest Security updates?
 # check to make sure no VLC ver: 2.1.5, Notepad++ no 7.3.2 and Earlier, chrome newer than 55.0.2883
+# Apple said the things mentioned here have been patched since 2013
+# Source: https://www.macrumors.com/2017/03/07/apple-wikileaks-vault-7-patched/
 
 def MacScanner():
     # get updates from system
-    minVersion = "10.20"
-    """ CHANGE BACK TO 10.10 """
+    minVersion = "10.20" # CHANGE BACK TO 10.10
     minSecurityUpdateVersion = [2017, 3] #OG 2015, 6
 
     print("Mac Scanner")
@@ -73,18 +74,18 @@ def MacScanner():
     ['Sandisk\\ Secure',''], ['U3\\ Software.app',''], ['2048.app',''],
     ['LBreakout2.app''']]
 
-    print(len(affected_programs))
+    #print(len(affected_programs))
+    #print(affected_programs[0][0], affected_programs[0][1])
 
-    print(affected_programs[0][0], affected_programs[0][1])
     commands = []
     for ap in affected_programs:
         commands.append(''.join(['mdls /Applications/', ap[0], ' -name kMDItemVersion | awk -F \'\"\' \'{print $2}\'']))
 
-    print(len(commands))
+    #print(len(commands))
     for i in range(0, len(affected_programs)-1):
         affected_programs[i][1] = os.popen(commands[i]).read().rstrip('\n')
 
-    print(affected_programs)
+    #print(affected_programs)
 
 
 # ----------------------------------------------------------------------------
@@ -92,13 +93,14 @@ def MacScanner():
     os.system("defaults read loginwindow SystemVersionStampAsString > SystemVersion.txt")
 
     # check system OS. if older than 10.10 then proceed with updates check
-    print("Getting System OS version")
+    print("Getting System OS version:")
     OS_version = [OS_version.rstrip('\n') for OS_version in open('SystemVersion.txt')]
+    print(OS_version[0])
 
-    temp = OS_version[0].split('.')
-    temp2 = minVersion.split('.')
+    current_os = OS_version[0].split('.')
+    secure_os= minVersion.split('.')
 
-    if int(temp[1]) > int(temp2[1]):
+    if int(current_os[1]) > int(secure_os[1]):
         print("OS is good")
         return
     else:
@@ -140,7 +142,6 @@ def MacScanner():
 
     for value in update_version_num:
         temp = value[2].split('-')
-        # print("{} {}".format(temp[0], temp[1]))
 
         if int(temp[0]) > minSecurityUpdateVersion[0]:
             # print("its a new security update")
@@ -164,7 +165,7 @@ def MacScanner():
 # check to make sure no VLC ver: 2.1.5, Notepad++ no 7.3.2 and Earlier, chrome newer than 55.0.2883
 #
 """ all affected app versions, not all have patched it bc things
-VLC Media Player, Irfan View, Chrome, Firefox, Thunderbird, Libre Office, Notepad++, Skype, 7-Zip, ClamWin, 
+VLC Media Player, Irfan View, Chrome, Firefox, Thunderbird, Libre Office, Notepad++, Skype, 7-Zip, ClamWin,
 Kasperksy TDSS Killer, McAfee Stinger, Sophos Virus Removal, Prezi, Babel Pad, Iperius Backup, Sandisk Secure,
  U3 Software, 2048, LBreakout2
 """
