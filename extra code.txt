@@ -1,0 +1,23 @@
+affected_programs = [['VLC\\ Media\\ Player.app', ''],
+  ['Irfan\\ View.app', ''], ['Google\\ Chrome.app',''],
+  ['Opera.app', ''], ['Firefox.app',''], ['Thunderbird.app',''],
+  ['Opera\\ Mail.app',''], ['Foxit\\ Reader.app',''],
+  ['Libre\\ Office.app',''], ['Notepad++.app',''],
+  ['Skype.app',''], ['7-Zip.app',''], ['ClamWin.app',''],
+  ['Kasperksy\\ TDSS\\ Killer.app',''], ['McAfee\\ Stinger.app',''], ['Sophos\\ Virus\\ Removal.app',''], ['Prezi.app',''],
+  ['Babel\\ Pad.app',''], ['Iperius\\ Backup.app',''],
+  ['Sandisk\\ Secure',''], ['U3\\ Software.app',''], ['2048.app',''],
+  ['LBreakout2.app''']]
+
+  #print(len(affected_programs))
+  #print(affected_programs[0][0], affected_programs[0][1])
+
+  commands = []
+  for ap in affected_programs:
+      commands.append(''.join(['mdls /Applications/', ap[0], ' -name kMDItemVersion | awk -F \'\"\' \'{print $2}\'']))
+
+  #print(len(commands))
+  for i in range(0, len(affected_programs)-1):
+      affected_programs[i][1] = os.popen(commands[i]).read().rstrip('\n')
+
+  #print(affected_programs)

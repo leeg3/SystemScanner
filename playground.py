@@ -1,12 +1,7 @@
 
 def test():
 
-    temp = [temp.rstrip('\n') for temp in open('Windows/Patched_versions.txt')]
-
-    patched_versions = []
-
-    for elem in temp:
-        patched_versions.append(elem.split(': '))
+    patched_versions = [patched_versions.rstrip('\n').split(': ') for patched_versions in open('Windows/Patched_versions.txt')]
 
     app_contents = [app_contents.rstrip('\n') for app_contents in open('Windows/AppVersions.txt')] # open('Windows\AppVersions.txt')]
 
@@ -68,5 +63,5 @@ if int(temp[0]) > minSecurityUpdateVersion[0]:
 elif int(temp[0]) == int(minSecurityUpdateVersion[0]):
     if int(temp[1]) > int(minSecurityUpdateVersion[1]):
         # print("its a new security version")
-        uptodate_version = 1                
+        uptodate_version = 1
 """
