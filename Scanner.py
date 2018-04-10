@@ -143,8 +143,8 @@ Kasperksy TDSS Killer, McAfee Stinger, Sophos Virus Removal, Prezi, Babel Pad, I
  U3 Software, 2048, LBreakout2
 """
 
+
 def WindowsScanner():
-    print("Windows Scanner")
 
     path = os.popen('cd').read()
     path = path.rstrip('\n')
@@ -152,7 +152,8 @@ def WindowsScanner():
 # Application Checker
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
-# ---------------------------------------------------------------------------
+
+    print("Windows Application Scanner")
 
     # exec script in PS with path given
     full_path = ''.join(['Powershell.exe .\Windows\getappversions.ps1 ', path, '\Windows\AppVersions.txt'])
@@ -179,6 +180,9 @@ def WindowsScanner():
                 app_sorted.append([line[0:v_start].strip(), line[v_start+1:len(line)]])
                 break
 
+    update_apps = []
+    vulnerbale_apps = []
+
     for installed_app in app_sorted:
         for patched_app in patched_versions:
             if patched_app[0] == installed_app[0]:
@@ -186,31 +190,40 @@ def WindowsScanner():
                 pver = patched_app[1].split('.')
 
                 if int(iver[0]) >= int(pver[0]):
-                    print("{} is outdated. Please update".format(installed_app[0]))
+                    update_apps.append(installed_app[0])
+
+    if update_apps == []:
+        print("No apps need updating")
+    else:
+        for elem in update_apps:
+            print("{} needs to be updated to the latest version.".format(elem))
+        print("Please download the updated app(s) from the developer's website or "
+              "contact your system administrator.")
 
 # System Checker
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
-# ---------------------------------------------------------------------------
-
+    print("=======================================================")
+    print("Windows System Scanner")
     os_info = os.popen('systeminfo | findstr /B /C:"OS Name" /C:"OS Version"').read()
     os_name = os_info[0].rstrip('\n')
     os_ver = os_info[1].rstrip('\n')
 
-    print("Checking System")
-
+    print("System Information")
     print(os_info)
 
     affected_os = ['XP', 'Vista', '7', '8', '10']
     status = ''
 
-    for os in affected_os:
-        if os in os_name:
-            status = 'YOU GONNA ESPLODE'
+    for op_sys in affected_os:
+        if op_sys in os_name:
+            status = 'Please update your system to the newest version of Windows.' \
+                     'You are vulnerable to some Vault 7 exploits. '
         else:
-            status = 'your ok'
+            status = 'Your system is not vulnerable to Vault 7 exploits.'
 
     print(status)
+
     # exec script in PS with path given
     full_path = ''.join(['Powershell.exe .\Windows\getupdates.ps1 ', path, '\Windows\InstalledUpdates.txt'])
 
@@ -218,7 +231,7 @@ def WindowsScanner():
     os.system(full_path)
 
     contents = [contents.rstrip('\n') for contents in open('Windows\InstalledUpdates.txt')]
-    print(contents)
+    # print(contents)
 
     filtered_contents = []
 
@@ -226,7 +239,7 @@ def WindowsScanner():
         if 'Succeeded' in line or 'Title' in line:
             filtered_contents.append(line.strip())
 
-    print(filtered_contents)
+    # print(filtered_contents)
 
 
 def main():
