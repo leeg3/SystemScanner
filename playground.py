@@ -1,35 +1,18 @@
-
 def test():
 
-    patched_versions = [patched_versions.rstrip('\n').split(': ') for patched_versions in open('Windows/Patched_versions.txt')]
+    contents = [contents.rstrip('\n') for contents in open('Windows/InstalledUpdates.txt')] #open('Windows\InstalledUpdates.txt')]
 
-    app_contents = [app_contents.rstrip('\n') for app_contents in open('Windows/AppVersions.txt')] # open('Windows\AppVersions.txt')]
+    filtered_contents = []
 
-    app_info = []
-    app_sorted = []
+    # get names of each installed update
+    for i in range(0,len(contents)):
+        if 'Succeeded' in contents[i]:
+            filtered_contents.append(contents[i+1].strip())
 
-    # remove empty elements in list and remove excess whitespace
-    for line in app_contents:
-        if line != '':
-            app_info.append(' '.join(line.split()))
+    print(filtered_contents)
 
-    # separate version # and app name
-    for line in app_info:
-        for i in range(1, len(line)):
-            if line[-i] == ' ':
-                v_start = len(line) - i
-                app_sorted.append([line[0:v_start].strip(), line[v_start+1:len(line)]])
-                break
+    
 
-    for installed_app in app_sorted:
-        for patched_app in patched_versions:
-            if patched_app[0] == installed_app[0]:
-
-                iver = installed_app[1].split('.')
-                pver = patched_app[1].split('.')
-
-                if int(iver[0]) >= int(pver[0]):
-                    print("{} is outdated. Please update".format(installed_app[0]))
 
 
 def main():
@@ -43,6 +26,10 @@ if __name__ == '__main__':
 
 
 """
+
+
+==================
+
     # remove empty elements in list and remove excess whitespace
     for line in app_contents:
         if line != '':
