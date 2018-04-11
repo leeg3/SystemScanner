@@ -1,18 +1,15 @@
 def test():
 
-    contents = [contents.rstrip('\n') for contents in open('Windows/InstalledUpdates.txt')] #open('Windows\InstalledUpdates.txt')]
+    str = 'Windows 8.1 for x64-based systems 4054522'
 
-    filtered_contents = []
+    key = 'system'
+    key2 = '4054522'
 
-    # get names of each installed update
-    for i in range(0,len(contents)):
-        if 'Succeeded' in contents[i]:
-            filtered_contents.append(contents[i+1].strip())
+    if key in str:
+        print('Key is in str')
 
-    print(filtered_contents)
-
-    
-
+    if key2 in str:
+        print('Key2 is in str')
 
 
 def main():

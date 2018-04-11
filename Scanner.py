@@ -27,23 +27,6 @@ then output names of missing updates
 prompt for script to automatically install it?
 - sudo softwareupdate -i <name of update>
 done
-
-
-*Windows*
-AngelFire (Xp/7), Dumbo (x32 XP/Vista/new versions), BothanSpy, Elsa, Brutal Kangaroo,
-Pandemic, Athena (XP and up), AfterMidnight, Grasshopper
-
-get list of updates
-see ps script
-
-check for missing updates
-- get list o updates for Vault 7
-
-output names of missing updates
-
-prompt script to automatically install?
-- looks like i'd need to do this to auto install updates
-https://gallery.technet.microsoft.com/scriptcenter/2d191bcd-3308-4edd-9de2-88dff796b0bc
 """
 
 import os
@@ -131,6 +114,23 @@ def MacScanner():
         print("Please update OS to newest version")
 
 
+"""
+*Windows*
+AngelFire (Xp/7), Dumbo (x32 XP/Vista/new versions), BothanSpy, Elsa, Brutal Kangaroo,
+Pandemic, Athena (XP and up), AfterMidnight, Grasshopper
+
+get list of updates
+see ps script
+
+check for missing updates
+- get list o updates for Vault 7
+
+output names of missing updates
+
+prompt script to automatically install?
+- looks like i'd need to do this to auto install updates
+https://gallery.technet.microsoft.com/scriptcenter/2d191bcd-3308-4edd-9de2-88dff796b0bc
+"""
 # AngelFire (Xp/7), Dumbo (x32 XP/Vista/new versions), BothanSpy(all), Elsa (all)
 # Brutal Kangaroo(XP), Pandemic(all), Athena (XP and up), AfterMidnight(all)
 # Grasshopper(>=8/all)
@@ -252,7 +252,7 @@ def WindowsScanner():
     filtered_contents = []
 
     for line in contents:
-        if 'Succeeded' in line or 'Title' in line:
+        if 'Title' in line:
             filtered_contents.append(line.strip())
 
     # print(filtered_contents)
@@ -274,7 +274,37 @@ def WindowsScanner():
 
     critical_updates = [critical_updates.rstrip('\n') for critical_updates in open(critical_updates_file)]
 
-    print(critical_updates)
+    #print(critical_updates)
+
+    # separate update name and number, then check if update applys to this machine (32/64) and if update num is in installed updates txt file
+
+    crit_updates = []
+
+    for elem in critical_updates:
+        temp = elem.split(': ')
+        crit_updates.append(temp)
+
+    filtered_contents.append('KB4054522')
+    # print(filtered_contents)
+    # print(crit_updates)
+
+    confirmed_updates = []
+
+    # determine which updates are installed onto machine
+    for elem in crit_updates:
+        if os_type in elem[0]:
+            for installed_update in filtered_contents:
+                if elem[1] in installed_update:
+                    confirmed_updates.append(elem[1])
+
+    # output results `
+    for elem in crit_updates:
+        for elem2 in confirmed_updates:
+            if os_type in elem[0]:
+                if elem2 in elem[1]:
+                    print('Update {} is installed'.format(elem2))
+                else:
+                    print('Please install the following update: {}'.format(elem))
 
 
 def main():
