@@ -1,1 +1,0 @@
-﻿if ([System.IntPtr]::Size -eq 4) { "32-bit" } else { "64-bit" }

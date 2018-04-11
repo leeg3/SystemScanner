@@ -38,6 +38,7 @@ import platform
 # Apple said the things mentioned here have been patched since 2013
 # Source: https://www.macrumors.com/2017/03/07/apple-wikileaks-vault-7-patched/
 
+
 def MacScanner():
     # get updates from system
     minVersion = "10.20" # CHANGE BACK TO 10.10
@@ -49,11 +50,11 @@ def MacScanner():
 
     # check system OS. if older than 10.10 then proceed with updates check
     print("Getting System OS version:")
-    OS_version = [OS_version.rstrip('\n') for OS_version in open('SystemVersion.txt')]
-    print(OS_version[0] + '\n')
+    os_version = [OS_version.rstrip('\n') for OS_version in open('SystemVersion.txt')]
+    print(os_version[0] + '\n')
 
-    current_os = OS_version[0].split('.')
-    secure_os= minVersion.split('.')
+    current_os = os_version[0].split('.')
+    secure_os = minVersion.split('.')
 
     if int(current_os[1]) > int(secure_os[1]):
         print("Your Operating System is safe from Vault 7 exploits.\n")
@@ -262,7 +263,7 @@ def WindowsScanner():
 
     critical_updates_file = 'Windows/'
 
-    os_name = 'Windows 8'
+    # os_name = 'Windows 8'
     if 'Vista' in os_name:
         critical_updates_file = critical_updates_file + 'winVistaupdates.txt'
     elif '7' in os_name:
@@ -274,9 +275,7 @@ def WindowsScanner():
 
     critical_updates = [critical_updates.rstrip('\n') for critical_updates in open(critical_updates_file)]
 
-    #print(critical_updates)
-
-    # separate update name and number, then check if update applys to this machine (32/64) and if update num is in installed updates txt file
+    # separate update name and number, then check if update applys to machine (32/64), if update num is installed updates txt file
 
     crit_updates = []
 
@@ -284,7 +283,7 @@ def WindowsScanner():
         temp = elem.split(': ')
         crit_updates.append(temp)
 
-    filtered_contents.append('KB4054522')
+    # filtered_contents.append('KB4054522')
     # print(filtered_contents)
     # print(crit_updates)
 
@@ -297,14 +296,14 @@ def WindowsScanner():
                 if elem[1] in installed_update:
                     confirmed_updates.append(elem[1])
 
-    # output results `
+    # output results
     for elem in crit_updates:
         for elem2 in confirmed_updates:
             if os_type in elem[0]:
                 if elem2 in elem[1]:
                     print('Update {} is installed'.format(elem2))
                 else:
-                    print('Please install the following update: {}'.format(elem))
+                    print('Please install the following update: {} {}'.format(elem[0], elem[1]))
 
 
 def main():
