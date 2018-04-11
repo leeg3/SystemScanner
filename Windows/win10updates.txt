@@ -1,0 +1,83 @@
+Windows 10 for 32-bit Systems 4012606
+Windows 10 for 32-bit Systems 4015221
+Windows 10 for 32-bit Systems 4019474
+Windows 10 for 32-bit Systems 4022727
+Windows 10 for 32-bit Systems 4025338
+Windows 10 for 32-bit Systems 4034668
+Windows 10 for 32-bit Systems 4038781
+Windows 10 for 32-bit Systems 4042895
+Windows 10 for 32-bit Systems 4048956
+Windows 10 for 32-bit Systems 4053581
+Windows 10 for x64-based Systems 4012606
+Windows 10 for x64-based Systems 4015221
+Windows 10 for x64-based Systems 4019474
+Windows 10 for x64-based Systems 4022727
+Windows 10 for x64-based Systems 4025338
+Windows 10 for x64-based Systems 4034668
+Windows 10 for x64-based Systems 4038781
+Windows 10 for x64-based Systems 4042895
+Windows 10 for x64-based Systems 4048956
+Windows 10 for x64-based Systems 4053581
+Windows 10 Version 1511 for 32-bit Systems 4013198
+Windows 10 Version 1511 for 32-bit Systems 4015219
+Windows 10 Version 1511 for 32-bit Systems 4019473
+Windows 10 Version 1511 for 32-bit Systems 4022714
+Windows 10 Version 1511 for 32-bit Systems 4025344
+Windows 10 Version 1511 for 32-bit Systems 4034660
+Windows 10 Version 1511 for 32-bit Systems 4038783
+Windows 10 Version 1511 for 32-bit Systems 4041689
+Windows 10 Version 1511 for 32-bit Systems 4048952
+Windows 10 Version 1511 for 32-bit Systems 4053578
+Windows 10 Version 1511 for x64-based Systems 4013198
+Windows 10 Version 1511 for x64-based Systems 4015219
+Windows 10 Version 1511 for x64-based Systems 4019473
+Windows 10 Version 1511 for x64-based Systems 4022714
+Windows 10 Version 1511 for x64-based Systems 4025344
+Windows 10 Version 1511 for x64-based Systems 4034660
+Windows 10 Version 1511 for x64-based Systems 4038783
+Windows 10 Version 1511 for x64-based Systems 4041689
+Windows 10 Version 1511 for x64-based Systems 4048952
+Windows 10 Version 1511 for x64-based Systems 4053578
+Windows 10 Version 1607 for 32-bit Systems 4013429
+Windows 10 Version 1607 for 32-bit Systems 4015217
+Windows 10 Version 1607 for 32-bit Systems 4019472
+Windows 10 Version 1607 for 32-bit Systems 4022715
+Windows 10 Version 1607 for 32-bit Systems 4025339
+Windows 10 Version 1607 for 32-bit Systems 4034658
+Windows 10 Version 1607 for 32-bit Systems 4038782
+Windows 10 Version 1607 for 32-bit Systems 4041691
+Windows 10 Version 1607 for 32-bit Systems 4048953
+Windows 10 Version 1607 for 32-bit Systems 4053579
+Windows 10 Version 1607 for 32-bit Systems 4054517
+Windows 10 Version 1607 for x64-based Systems 4013429
+Windows 10 Version 1607 for x64-based Systems 4015217
+Windows 10 Version 1607 for x64-based Systems 4019472
+Windows 10 Version 1607 for x64-based Systems 4022715
+Windows 10 Version 1607 for x64-based Systems 4025339
+Windows 10 Version 1607 for x64-based Systems 4034658
+Windows 10 Version 1607 for x64-based Systems 4038782
+Windows 10 Version 1607 for x64-based Systems 4041691
+Windows 10 Version 1607 for x64-based Systems 4048953
+Windows 10 Version 1607 for x64-based Systems 4053579
+Windows 10 Version 1703 for 32-bit Systems 4015583
+Windows 10 Version 1703 for 32-bit Systems 4016871
+Windows 10 Version 1703 for 32-bit Systems 4022725
+Windows 10 Version 1703 for 32-bit Systems 4025342
+Windows 10 Version 1703 for 32-bit Systems 4034674
+Windows 10 Version 1703 for 32-bit Systems 4038788
+Windows 10 Version 1703 for 32-bit Systems 4041676
+Windows 10 Version 1703 for 32-bit Systems 4048954
+Windows 10 Version 1703 for 32-bit Systems 4053580
+Windows 10 Version 1703 for x64-based Systems 4015583
+Windows 10 Version 1703 for x64-based Systems 4016871
+Windows 10 Version 1703 for x64-based Systems 4022725
+Windows 10 Version 1703 for x64-based Systems 4025342
+Windows 10 Version 1703 for x64-based Systems 4034674
+Windows 10 Version 1703 for x64-based Systems 4038788
+Windows 10 Version 1703 for x64-based Systems 4041676
+Windows 10 Version 1703 for x64-based Systems 4048954
+Windows 10 Version 1703 for x64-based Systems 4053580
+Windows 10 Version 1709 for 32-bit Systems 4048955
+Windows 10 Version 1709 for 32-bit Systems 4054517
+Windows 10 Version 1709 for 64-based Systems 4048955
+Windows 10 Version 1709 for 64-based Systems 4054517

@@ -1,0 +1,50 @@
+Windows 8.1 for 32-bit systems: 4012213
+Windows 8.1 for 32-bit systems: 4012216
+Windows 8.1 for 32-bit systems: 4015547
+Windows 8.1 for 32-bit systems: 4015550
+Windows 8.1 for 32-bit systems: 4019213
+Windows 8.1 for 32-bit systems: 4019215
+Windows 8.1 for 32-bit systems: 4022717
+Windows 8.1 for 32-bit systems: 4022726
+Windows 8.1 for 32-bit systems: 4025333
+Windows 8.1 for 32-bit systems: 4025336
+Windows 8.1 for 32-bit systems: 4034672
+Windows 8.1 for 32-bit systems: 4034681
+Windows 8.1 for 32-bit systems: 4038792
+Windows 8.1 for 32-bit systems: 4038793
+Windows 8.1 for 32-bit systems: 4041687
+Windows 8.1 for 32-bit systems: 4041693
+Windows 8.1 for 32-bit systems: 4048958
+Windows 8.1 for 32-bit systems: 4048961
+Windows 8.1 for 32-bit systems: 4054519
+Windows 8.1 for 32-bit systems: 4054522
+Windows 8.1 for x64-based systems: 4012213
+Windows 8.1 for x64-based systems: 4012216
+Windows 8.1 for x64-based systems: 4015547
+Windows 8.1 for x64-based systems: 4015550
+Windows 8.1 for x64-based systems: 4019213
+Windows 8.1 for x64-based systems: 4019215
+Windows 8.1 for x64-based systems: 4022717
+Windows 8.1 for x64-based systems: 4022726
+Windows 8.1 for x64-based systems: 4025333
+Windows 8.1 for x64-based systems: 4025336
+Windows 8.1 for x64-based systems: 4034672
+Windows 8.1 for x64-based systems: 4034681
+Windows 8.1 for x64-based systems: 4038792
+Windows 8.1 for x64-based systems: 4038793
+Windows 8.1 for x64-based systems: 4041687
+Windows 8.1 for x64-based systems: 4041693
+Windows 8.1 for x64-based systems: 4048958
+Windows 8.1 for x64-based systems: 4048961
+Windows 8.1 for x64-based systems: 4054519
+Windows 8.1 for x64-based systems: 4054522
+Windows RT 8.1: 4012216
+Windows RT 8.1: 4015550
+Windows RT 8.1: 4019215
+Windows RT 8.1: 4022726
+Windows RT 8.1: 4025336
+Windows RT 8.1: 4034681
+Windows RT 8.1: 4038792
+Windows RT 8.1: 4041693
+Windows RT 8.1: 4048958
+Windows RT 8.1: 4054519

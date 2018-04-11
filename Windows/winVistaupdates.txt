@@ -1,0 +1,39 @@
+Windows Vista Service Pack 2: 3205715
+Windows Vista Service Pack 2: 3214051
+Windows Vista Service Pack 2: 3217587
+Windows Vista Service Pack 2: 3218362
+Windows Vista Service Pack 2: 4011981
+Windows Vista Service Pack 2: 4012373
+Windows Vista Service Pack 2: 4012497
+Windows Vista Service Pack 2: 4012583
+Windows Vista Service Pack 2: 4012584
+Windows Vista Service Pack 2: 4012598
+Windows Vista Service Pack 2: 4014652
+Windows Vista Service Pack 2: 4014793
+Windows Vista Service Pack 2: 4014794
+Windows Vista Service Pack 2: 4015067
+Windows Vista Service Pack 2: 4015068
+Windows Vista Service Pack 2: 4015195
+Windows Vista Service Pack 2: 4015380
+Windows Vista Service Pack 2: 4015383
+Windows Vista Service Pack 2: 4017018
+Windows Vista x64 Edition Service Pack 2: 3205715
+Windows Vista x64 Edition Service Pack 2: 3211306
+Windows Vista x64 Edition Service Pack 2: 3214051
+Windows Vista x64 Edition Service Pack 2: 3217587
+Windows Vista x64 Edition Service Pack 2: 3218362
+Windows Vista x64 Edition Service Pack 2: 4011981
+Windows Vista x64 Edition Service Pack 2: 4012373
+Windows Vista x64 Edition Service Pack 2: 4012497
+Windows Vista x64 Edition Service Pack 2: 4012583
+Windows Vista x64 Edition Service Pack 2: 4012584
+Windows Vista x64 Edition Service Pack 2: 4012598
+Windows Vista x64 Edition Service Pack 2: 4014652
+Windows Vista x64 Edition Service Pack 2: 4014793
+Windows Vista x64 Edition Service Pack 2: 4014794
+Windows Vista x64 Edition Service Pack 2: 4015067
+Windows Vista x64 Edition Service Pack 2: 4015068
+Windows Vista x64 Edition Service Pack 2: 4015195
+Windows Vista x64 Edition Service Pack 2: 4015380
+Windows Vista x64 Edition Service Pack 2: 4015383
+Windows Vista x64 Edition Service Pack 2: 4017018

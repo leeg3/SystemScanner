@@ -108,6 +108,7 @@ Team Explorer for Microsoft Visual Studio 2015                                  
 Visual C++ Library CRT ARM Redist Package                                           14.0.23506    
 Microsoft Visual Studio Professional 2015 - ENU                                     14.0.23107    
 Java Auto Updater                                                                   2.8.161.12    
+Warframe                                                                            1.0.0         
 Microsoft NuGet - Visual Studio 2015                                                3.3.0.167     
 Dotfuscator and Analytics Community Edition 5.19.0                                  5.19.0.2930   
 Visual C++ IDE Core Professional Plus Resource Package                              14.0.24720    
