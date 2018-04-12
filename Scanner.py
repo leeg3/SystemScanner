@@ -46,67 +46,70 @@ def MacScanner():
 
     print("Mac System Scanner")
 
+    # get system info
     os.system("defaults read loginwindow SystemVersionStampAsString > SystemVersion.txt")
 
     # check system OS. if older than 10.10 then proceed with updates check
     print("Getting System OS version:")
-    os_version = [OS_version.rstrip('\n') for OS_version in open('SystemVersion.txt')]
+    os_version = [os_version.rstrip('\n') for os_version in open('SystemVersion.txt')]
     print(os_version[0] + '\n')
 
+    # store current OS and secure OS (patched against Vault 7) into variables
     current_os = os_version[0].split('.')
     secure_os = minVersion.split('.')
 
+    # determine if current os is secure or not.
     if int(current_os[1]) > int(secure_os[1]):
         print("Your Operating System is safe from Vault 7 exploits.\n")
         return
     else:
         print("Your Operating System is vulnerable to some Vault 7 exploits, please upgrade to your OS.\n")
 
+    # if the system is deemed potentially insecure, get a list of system updates
     print("Retrieving list of installed system updates")
     os.system("/usr/sbin/system_profiler SPInstallHistoryDataType > InstalledUpdates.txt")
-    # open file and get the update name and the version #
-    # can prob use algoirthm from CA to get the info
-    # check against array of most up to date version numbers of important updates
-    # output update names and version numbers that are less than the ones in the array
+
+    # parse list of installed updates into a list
     lines = [line.rstrip('\n') for line in open('InstalledUpdates.txt')]
 
+    # remove white space from lines
     for i in range(0, len(lines)):
         lines[i] = lines[i].strip()
-
         if lines[i] == '\n' or lines[i] == "":
             i += 1
 
+    # create lists to store names of updates and their current version
     update_names = []
     update_version_num = []
 
+    # retrieve the security updates, parse them and then add into a list
     for i in range(0, len(lines)):
-        # print(lines[i])
         if "Security Update" in lines[i] and "Security Update" not in update_names:
             update_names.append(lines[i].rstrip(':'))
 
     print("The following Security Updates have been installed onto this machine: ")
-
     for elem in update_names:
         print(elem)
 
-    for i in range(0, len(update_names)):
-        # print(update_names[i])
-        update_version_num.append(update_names[i].split(' '))
+    # retrieve the version numbers and store into a list
+    for elem in update_names:
+        update_version_num.append(elem.split(' '))
 
     uptodate_update = 0
     uptodate_version = 0
 
-    for value in update_version_num:
-        temp = value[2].split('-')
-
+    # compare security update version and determine if it secures the machine
+    for elem in update_version_num:
+        temp = elem[2].split('-')
         if int(temp[0]) > minSecurityUpdateVersion[0]:
-            # print("its a new security update")
             uptodate_update = 1
         elif int(temp[0]) == int(minSecurityUpdateVersion[0]):
             if int(temp[1]) > int(minSecurityUpdateVersion[1]):
-                # print("its a new security version")
                 uptodate_version = 1
 
+    # if the system has an up to date update and version then it should be secure
+    # if there is an older version of the update then prompt user to update
+    # if none then prompt user to update OS.
     if uptodate_update == 1 and uptodate_version == 1:
         print("Your system is secure from most Vault 7 mac OS X vulnerabilties")
     elif uptodate_version == 0:
@@ -127,10 +130,6 @@ check for missing updates
 - get list o updates for Vault 7
 
 output names of missing updates
-
-prompt script to automatically install?
-- looks like i'd need to do this to auto install updates
-https://gallery.technet.microsoft.com/scriptcenter/2d191bcd-3308-4edd-9de2-88dff796b0bc
 """
 # AngelFire (Xp/7), Dumbo (x32 XP/Vista/new versions), BothanSpy(all), Elsa (all)
 # Brutal Kangaroo(XP), Pandemic(all), Athena (XP and up), AfterMidnight(all)
@@ -207,11 +206,12 @@ def WindowsScanner():
 # ---------------------------------------------------------------------------
     print("=======================================================")
     print("Windows System Scanner")
+    # get system info
     system_output = os.popen('systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"').read()
-
     print("System Information")
     print(system_output)
 
+    # parse system info into a list
     output_split = system_output.split('\n')
     os_info = []
 
@@ -220,6 +220,7 @@ def WindowsScanner():
             temp = elem.split(': ')
             os_info.append(temp)
 
+    # store parsed info into variables
     os_name = os_info[0][1].strip()
     os_build_info = os_info[1][1].strip().split(' ')
     os_ver = os_build_info[0]
@@ -230,40 +231,37 @@ def WindowsScanner():
             os_type = os_type[i] + os_type[i+1]
             break
 
+    # list of Windows OS's most affected by Vault 7 exploits
     affected_os = ['XP', 'Vista', '7', '8']
     status = ''
 
+    # reconsider this block of code?
     for op_sys in affected_os:
         if op_sys in os_name:
             status = 'Please update your system to the newest version of Windows. You are vulnerable to some Vault 7 exploits. '
         else:
             status = 'Your system is not vulnerable to Vault 7 exploits.'
-
     print(status)
 
-    # exec script in PS with path given
+    # create full command to run PS script to retrieve a list of installed updates
     full_path = ''.join(['Powershell.exe .\Windows\getupdates.ps1 ', path, '\Windows\InstalledUpdates.txt'])
 
-    # run PS script to get updates and put into file
+    # run above PS script
     os.system(full_path)
 
+    # store list of installed updates into a list
     contents = [contents.rstrip('\n') for contents in open('Windows\InstalledUpdates.txt')]
-    # print(contents)
 
-    filtered_contents = []
+    update_names = []
 
     for line in contents:
         if 'Title' in line:
-            filtered_contents.append(line.strip())
+            update_names.append(line.strip())
 
-    # print(filtered_contents)
-
-    # load in updates that each machine should have per built in OS (xp, vista, 7, 8)
-    # then compare to installed updates and output those missing.
-
+    # init variable to hold path to critical updates for a specific OS.
     critical_updates_file = 'Windows/'
 
-    # os_name = 'Windows 8'
+    # determine OS and combine strings
     if 'Vista' in os_name:
         critical_updates_file = critical_updates_file + 'winVistaupdates.txt'
     elif '7' in os_name:
@@ -273,6 +271,7 @@ def WindowsScanner():
     else:
         critical_updates_file = critical_updates_file + 'nothing.txt'
 
+    # store critical system updates into a list
     critical_updates = [critical_updates.rstrip('\n') for critical_updates in open(critical_updates_file)]
 
     # separate update name and number, then check if update applys to machine (32/64), if update num is installed updates txt file
@@ -283,8 +282,7 @@ def WindowsScanner():
         temp = elem.split(': ')
         crit_updates.append(temp)
 
-    # filtered_contents.append('KB4054522')
-    # print(filtered_contents)
+    # print(update_names)
     # print(crit_updates)
 
     confirmed_updates = []
@@ -292,7 +290,7 @@ def WindowsScanner():
     # determine which updates are installed onto machine
     for elem in crit_updates:
         if os_type in elem[0]:
-            for installed_update in filtered_contents:
+            for installed_update in update_names:
                 if elem[1] in installed_update:
                     confirmed_updates.append(elem[1])
 
