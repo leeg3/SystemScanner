@@ -47,11 +47,11 @@ def MacScanner():
     print("Mac System Scanner")
 
     # get system info
-    os.system("defaults read loginwindow SystemVersionStampAsString > SystemVersion.txt")
+    os.system("defaults read loginwindow SystemVersionStampAsString > /Mac/SystemVersion.txt")
 
     # check system OS. if older than 10.10 then proceed with updates check
     print("Getting System OS version:")
-    os_version = [os_version.rstrip('\n') for os_version in open('SystemVersion.txt')]
+    os_version = [os_version.rstrip('\n') for os_version in open('Mac/SystemVersion.txt')]
     print(os_version[0] + '\n')
 
     # store current OS and secure OS (patched against Vault 7) into variables
@@ -67,10 +67,10 @@ def MacScanner():
 
     # if the system is deemed potentially insecure, get a list of system updates
     print("Retrieving list of installed system updates")
-    os.system("/usr/sbin/system_profiler SPInstallHistoryDataType > InstalledUpdates.txt")
+    os.system("/usr/sbin/system_profiler SPInstallHistoryDataType > Mac/InstalledUpdates.txt")
 
     # parse list of installed updates into a list
-    lines = [line.rstrip('\n') for line in open('InstalledUpdates.txt')]
+    lines = [line.rstrip('\n') for line in open('Mac/InstalledUpdates.txt')]
 
     # remove white space from lines
     for i in range(0, len(lines)):
