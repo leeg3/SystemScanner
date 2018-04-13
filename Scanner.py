@@ -23,10 +23,6 @@ check to see if certain critical updates are missing
 https://support.apple.com/en-us/HT201222
 
 then output names of missing updates
-
-prompt for script to automatically install it?
-- sudo softwareupdate -i <name of update>
-done
 """
 
 import os
@@ -141,6 +137,12 @@ def WindowsScanner():
     path = os.popen('cd').read()
     path = path.rstrip('\n')
 
+    execpolicy = os.popen('Powershell.exe Get-ExecutionPolicy').read()
+    typeofps = os.popen('Powershell.exe [Environment]::Is64BitProcess').read()
+
+    # print(execpolicy)
+    # print(typeofps)
+
 # Application Checker
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
@@ -177,33 +179,29 @@ def WindowsScanner():
                 app_sorted.append([line[0:v_start].strip(), line[v_start+1:len(line)]])
                 break
 
-    update_apps = []
-    num = 0
+    # print(app_sorted)
 
-    # look for appps that need to be updated.
-    print("Application Scanner")
+    # look for apps that need to be updated and display which ones need to be updated TESTED
     for installed_app in app_sorted:
         for patched_app in patched_versions:
-            if patched_app[0] == installed_app[0]:
+            if patched_app[0] == installed_app[0] or patched_app[0] in installed_app[0]:
                 installed_version = installed_app[1].split('.')
                 patched_version = patched_app[1].split('.')
-
-                if int(installed_version[0]) <= int(patched_version[0]):
-                    num = 1
+                if int(installed_version[0]) >= int(patched_version[0]) and int(installed_version[1]) >= int(patched_version[1]):
+                    print("{} is patched from a Vault 7 exploit.".format(installed_app[0]))
+                elif int(installed_version[0]) <= int(patched_version[0]) and int(installed_version[1]) < int(patched_version[1]):
                     print("{} needs to be updated to the latest version.".format(installed_app[0]))
 
-    if num == 0:
-        print("No applications need to be updated.")
-
-    # id and display vulnerable apps to user
-    for iapp in app_sorted:
-        for vapp in vulnerable_apps:
-            if vapp in iapp[0] or vapp == iapp[0]:
-                print('{} is vulnerable to a Vault 7 exploit. Please verify that the files are from a trusted source.'.format(iapp[0]))
+    # id and display vulnerable apps to user TESTED
+    for installed_app in app_sorted:
+        for vulnerable_app in vulnerable_apps:
+            if vulnerable_app in installed_app[0] or vulnerable_app == installed_app[0]:
+                print('{} is potentially vulnerable to a Vault 7 exploit. Please verify that the program files are from a trusted source.'.format(installed_app[0]))
 
 # System Checker
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
+
     print("=======================================================")
     print("Windows System Scanner")
     # get system info
@@ -238,7 +236,7 @@ def WindowsScanner():
     # reconsider this block of code?
     for op_sys in affected_os:
         if op_sys in os_name:
-            status = 'Please update your system to the newest version of Windows. You are vulnerable to some Vault 7 exploits. '
+            status = 'Please ensure that your system is up to date. Please see listed updates below for reference.'
         else:
             status = 'Your system is not vulnerable to Vault 7 exploits.'
     print(status)
@@ -259,22 +257,20 @@ def WindowsScanner():
             update_names.append(line.strip())
 
     # init variable to hold path to critical updates for a specific OS.
-    critical_updates_file = 'Windows/'
+    critical_updates_file = ''
 
-    # determine OS and combine strings
+    # determine OS and combine strings TESTED
     if 'Vista' in os_name:
-        critical_updates_file = critical_updates_file + 'winVistaupdates.txt'
+        critical_updates_file = 'Windows\winVistaupdates.txt'
     elif '7' in os_name:
-        critical_updates_file = critical_updates_file + 'win7updates.txt'
+        critical_updates_file = 'Windows\win7updates.txt'
     elif '8' in os_name:
-        critical_updates_file = critical_updates_file + 'win8updates.txt'
+        critical_updates_file = 'Windows\win8updates.txt'
     else:
-        critical_updates_file = critical_updates_file + 'nothing.txt'
+        critical_updates_file = 'Windows\\nothing.txt'
 
     # store critical system updates into a list
     critical_updates = [critical_updates.rstrip('\n') for critical_updates in open(critical_updates_file)]
-
-    # separate update name and number, then check if update applys to machine (32/64), if update num is installed updates txt file
 
     crit_updates = []
 
@@ -282,26 +278,15 @@ def WindowsScanner():
         temp = elem.split(': ')
         crit_updates.append(temp)
 
-    # print(update_names)
-    # print(crit_updates)
-
-    confirmed_updates = []
-
-    # determine which updates are installed onto machine
+    # determine which updates are installed onto machine TESTED
     for elem in crit_updates:
         if os_type in elem[0]:
             for installed_update in update_names:
                 if elem[1] in installed_update:
-                    confirmed_updates.append(elem[1])
-
-    # output results
-    for elem in crit_updates:
-        for elem2 in confirmed_updates:
-            if os_type in elem[0]:
-                if elem2 in elem[1]:
-                    print('Update {} is installed'.format(elem2))
+                    print('Update {} is installed'.format(elem[1]))
                 else:
                     print('Please install the following update: {} {}'.format(elem[0], elem[1]))
+                    break
 
 
 def main():
