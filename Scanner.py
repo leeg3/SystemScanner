@@ -4,12 +4,6 @@ Date: 3/24/18
 Class: Scripting for Cyber Security
 Purpose: System vulnerability scanner for Mac/Windows
 
-notes:
-steps for script:
-get list o updates
-check to see if certain critical updates are missing
-then output names of missing updates
-
 *MAC*
 seapea, achilles, aeris, dark matter, nightskies, triton, dark mullet
 get list o updates
@@ -60,6 +54,8 @@ def MacScanner():
         return
     else:
         print("Your Operating System is vulnerable to some Vault 7 exploits, please upgrade to your OS.\n")
+
+    # maybe add this in? system_profiler SPHardwareDataType | grep "Model Identifier" 
 
     # if the system is deemed potentially insecure, get a list of system updates
     print("Retrieving list of installed system updates")
@@ -274,6 +270,7 @@ def WindowsScanner():
 
     crit_updates = []
 
+    # split update names into name and version number
     for elem in critical_updates:
         temp = elem.split(': ')
         crit_updates.append(temp)

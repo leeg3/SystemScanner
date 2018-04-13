@@ -3786,3 +3786,57 @@ Installations:
       Source: Apple
       Install Date: 4/2/18, 10:53 AM
 
+    iMovie:
+
+      Version: 10.1.7
+      Source: Apple
+      Install Date: 4/12/18, 10:43 PM
+
+    macOS High Sierra 10.13.4 Update:
+
+      Version:  
+      Source: Apple
+      Install Date: 4/12/18, 10:44 PM
+
+    macOS High Sierra 10.13.4 Update:
+
+      Version:  
+      Source: Apple
+      Install Date: 4/12/18, 10:52 PM
+
+    Microsoft AutoUpdate:
+
+      Version: 
+      Source: 3rd Party
+      Install Date: 4/12/18, 11:20 PM
+
+    Microsoft PowerPoint for Mac:
+
+      Version: 
+      Source: 3rd Party
+      Install Date: 4/12/18, 11:21 PM
+
+    Microsoft OneNote for Mac:
+
+      Version: 
+      Source: 3rd Party
+      Install Date: 4/12/18, 11:21 PM
+
+    Microsoft Excel for Mac:
+
+      Version: 
+      Source: 3rd Party
+      Install Date: 4/12/18, 11:22 PM
+
+    Microsoft Word for Mac:
+
+      Version: 
+      Source: 3rd Party
+      Install Date: 4/12/18, 11:22 PM
+
+    Microsoft Outlook for Mac:
+
+      Version: 
+      Source: 3rd Party
+      Install Date: 4/12/18, 11:22 PM
+
