@@ -29,14 +29,20 @@ Powershell 2.0 or later
 IV: Executing Script
 Mac OS X
 1. Navigate to the directory that the python script is saved to.
-2. type in the following to execute the script "python3 Scanner.py"
+2. type in the following to execute the script "python3 Scanner.py" 
 
 Windows
-With Pycharm
+Using PyCharm (easiest)
 1. Open script in Pycharm.
 2. Run Script using the Play button.
   - You may need to right click on the script in order to click "Run"
 
-Windows
-W/o Pycharm
-1. 
+Using Command Prompt
+1. Open Command Prompt and navigate to the directory where the script is stored.
+2. In order to execute a python script, you must call the full location of the python.exe file and the script. Below is an example. (Replace <Path> with the actual path of the python.exe file and Scanner.py file)
+
+Format:
+C:\<Path>\python.exe C:\<Path>\Scanner.py
+
+Example:
+C:\Users\<User>\AppData\Local\Programs\Python\Python36-32\python.exe C:/Users/<User>/Documents/repos/SystemScanner/Scanner.py

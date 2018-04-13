@@ -1,5 +1,18 @@
 
 
+Date        : 4/13/2018 4:07:17 PM
+Operation   : Installation
+Status      : Succeeded
+Title       : Definition Update for Windows Defender Antivirus - KB2267602 (Definition 1.265.560.0)
+Description : Install this update to revise the definition files that are used to detect viruses, spyware, and other 
+              potentially unwanted software. Once you have installed this item, it cannot be removed.
+
+Date        : 4/13/2018 4:07:10 PM
+Operation   : Installation
+Status      : Succeeded
+Title       : Update for Windows Defender antimalware platform - KB4052623 (Version 4.14.17613.18039)
+Description : This package will update Windows Defender antimalware platform?s components on the user machine.
+
 Date        : 4/12/2018 3:59:51 PM
 Operation   : Installation
 Status      : 

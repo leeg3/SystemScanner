@@ -21,3 +21,13 @@ affected_programs = [['VLC\\ Media\\ Player.app', ''],
       affected_programs[i][1] = os.popen(commands[i]).read().rstrip('\n')
 
   #print(affected_programs)
+
+
+
+"""
+
+# AngelFire (Xp/7), Dumbo (x32 XP/Vista/new versions), BothanSpy(all), Elsa (all)
+# Brutal Kangaroo(XP), Pandemic(all), Athena (XP and up), AfterMidnight(all)
+# Grasshopper(>=8/all)
+
+"""
