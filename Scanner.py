@@ -3,43 +3,34 @@ Author: Greg Lee
 Date: 3/24/18
 Class: Scripting for Cyber Security
 Purpose: System vulnerability scanner for Mac/Windows
+Description: This script determines if you system is secure from Vault 7 exploits by checking the installed Operating System and installed Security Updates.
 
-*MAC*
-seapea, achilles, aeris, dark matter, nightskies, triton, dark mullet
-get list o updates
-- **use this: /usr/sbin/system_profiler SPInstallHistoryDataType
-- this works too kinda softwareupdate -l
 
-check to see if certain critical updates are missing
-- apple does not say which update patched these vulnerabilities but it was patched in all Mac's made after 2013.
-- need to get a list of updates that were made specifically for these exploits
-- compare list from above to list of installed updates
-https://support.apple.com/en-us/HT201222
+Mac Scanner:
 
-then output names of missing updates
+Overview of Function:
+1. Determine OS version and if current OS is secure.
+2. If unsecure then get list o updates
+3. Check to see if certain critical updates are missing
+4. Compare list of installed updates to list of required updates
+5. Output names of missing updates
 """
 
 import os
 import platform
 
-# seapea[10.6, 10.7], achilles [10.6, all?], nightskies[10.5], triton [10.7, 10.8], dark mullet, Der Stare[10.8, 10.9]
-# aeris[malware], Sonic Screwdriver[firmware thing]
-# just update to 10.10 with latest Security updates?
-# Apple said the things mentioned here have been patched since 2013
-# Source: https://www.macrumors.com/2017/03/07/apple-wikileaks-vault-7-patched/
-
 
 def MacScanner():
-    # get updates from system
-    minVersion = "10.20" # CHANGE BACK TO 10.10
-    minSecurityUpdateVersion = [2017, 3] #OG 2015, 6
 
-    print("Mac System Scanner")
+    minVersion = "10.10"
+    minSecurityUpdateVersion = [2015, 6]
 
-    # get system info
-    os.system("defaults read loginwindow SystemVersionStampAsString > /Mac/SystemVersion.txt")
+    print("=======================================================\nMac System Scanner\n----------------------------------------")
 
-    # check system OS. if older than 10.10 then proceed with updates check
+    # retrieve system info
+    os.system("defaults read loginwindow SystemVersionStampAsString > Mac/SystemVersion.txt")
+
+    # retrieve System OS and output to user
     print("Getting System OS version:")
     os_version = [os_version.rstrip('\n') for os_version in open('Mac/SystemVersion.txt')]
     print(os_version[0] + '\n')
@@ -49,22 +40,20 @@ def MacScanner():
     secure_os = minVersion.split('.')
 
     # determine if current os is secure or not.
-    if int(current_os[1]) > int(secure_os[1]):
+    if int(current_os[0]) >= int(secure_os[0]) and int(current_os[1]) > int(secure_os[1]):
         print("Your Operating System is safe from Vault 7 exploits.\n")
         return
     else:
-        print("Your Operating System is vulnerable to some Vault 7 exploits, please upgrade to your OS.\n")
+        print("Your Operating System is vulnerable to some Vault 7 exploits, please ensure that your system is up to date.\n")
 
-    # maybe add this in? system_profiler SPHardwareDataType | grep "Model Identifier" 
-
-    # if the system is deemed potentially insecure, get a list of system updates
-    print("Retrieving list of installed system updates")
+    # if the system is deemed potentially insecure, retrieve list of system updates and store into a text file
+    print("Retrieving list of installed system updates\n")
     os.system("/usr/sbin/system_profiler SPInstallHistoryDataType > Mac/InstalledUpdates.txt")
 
     # parse list of installed updates into a list
     lines = [line.rstrip('\n') for line in open('Mac/InstalledUpdates.txt')]
 
-    # remove white space from lines
+    # remove white space from each line
     for i in range(0, len(lines)):
         lines[i] = lines[i].strip()
         if lines[i] == '\n' or lines[i] == "":
@@ -79,6 +68,7 @@ def MacScanner():
         if "Security Update" in lines[i] and "Security Update" not in update_names:
             update_names.append(lines[i].rstrip(':'))
 
+    # output installed security updates
     print("The following Security Updates have been installed onto this machine: ")
     for elem in update_names:
         print(elem)
@@ -90,7 +80,7 @@ def MacScanner():
     uptodate_update = 0
     uptodate_version = 0
 
-    # compare security update version and determine if it secures the machine
+    # compare security update version and determine if machine is secure
     for elem in update_version_num:
         temp = elem[2].split('-')
         if int(temp[0]) > minSecurityUpdateVersion[0]:
@@ -105,20 +95,19 @@ def MacScanner():
     if uptodate_update == 1 and uptodate_version == 1:
         print("Your system is secure from most Vault 7 mac OS X vulnerabilties")
     elif uptodate_version == 0:
-        print("Please apply the newest version of the security update to your machine")
+        print("Please apply the newest security update(s) to your machine")
     else:
         print("Please update OS to newest version")
 
 
 """
-Windows Scanner: 
- 
+Windows Scanner:
+
 Overview of function:
-1. Check installed applications for exploitable and vulnerable applications 
-2. Output results of scan 
-3. get list of updates using a powershell script 
-4. check against text file which contains list of security updates for that OS. 
-"""
+1. Check installed applications for exploitable and vulnerable applications
+2. Output results of scan
+3. get list of updates using a powershell script
+4. check against text file which contains list of security updates for that OS. """
 def WindowsScanner():
 
     # get current working directory
@@ -267,12 +256,16 @@ def WindowsScanner():
 
 
 def main():
+    # determine system type and store into variable
     system_os = platform.system()
 
+    # call function based on OS
     if system_os == 'Darwin':  # Mac
         MacScanner()
     elif system_os == 'Windows':  # Windows
         WindowsScanner()
+    else:
+        print("Error: OS not supproted")
 
 
 if __name__ == "__main__":

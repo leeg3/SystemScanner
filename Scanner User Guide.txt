@@ -3,35 +3,55 @@ Vault 7 System Scanner
 ######################
 By: Greg Lee
 
+
 I: Description:
 This scanner is built to scan your system and determine if you are vulnerable to the exploits listed in the Vault 7 leak. My scanner determines the system OS and then checks the installed updates on the machine. My script will then output if your system is vulnerable or not.
+
 
 II: Installation
 
 First download the scripts and supplementary text files. Make sure that all of the files are in the proper directories and subdirectories. This is necessary in order for the script to work.
 
+
 III. Script Requirements
 
-Mac OS X Requirements:
-Mac OS 10.2 or later
-Python3
+Mac OS X
+Requirements:
+- Mac OS 10.2 or later
+- Python3
 
-Windows Requirements:
-Windows XP or later
-Python3
-PyCharm Community Edition
-  - Optional but helpful for easily running the script
+Optional:
+- PyCharm Community Edition
+
+Windows
+Requirements:
+- Windows XP or later
+- Python3
 Powershell 2.0 or later
 - Temporarily set the execution policy to Bypass or Unrestricted.
   - If you are still running into errors then ensure that the execution policy for the 32 bit version of Powershell is also set to the above settings.
 
+Optional:
+PyCharm Community Edition
+
 
 IV: Executing Script
+
 Mac OS X
+
+With PyCharm
+1. Download PyCharm
+2. Open Script in PyCharm
+3. Run Script
+  - You may need to right click on the script in order to click "Run"
+
+With Terminal
 1. Navigate to the directory that the python script is saved to.
-2. type in the following to execute the script "python3 Scanner.py" 
+2. Type in the following to execute the script "python3 Scanner.py"
+
 
 Windows
+
 Using PyCharm (easiest)
 1. Open script in Pycharm.
 2. Run Script using the Play button.

@@ -25,9 +25,19 @@ affected_programs = [['VLC\\ Media\\ Player.app', ''],
 
 
 """
-
+Windows
 # AngelFire (Xp/7), Dumbo (x32 XP/Vista/new versions), BothanSpy(all), Elsa (all)
 # Brutal Kangaroo(XP), Pandemic(all), Athena (XP and up), AfterMidnight(all)
 # Grasshopper(>=8/all)
+
+Mac
+# seapea[10.6, 10.7], achilles [10.6, all?], nightskies[10.5], triton [10.7, 10.8], dark mullet, Der Stare[10.8, 10.9]
+# aeris[malware], Sonic Screwdriver[firmware thing]
+
+https://support.apple.com/en-us/HT201222
+
+# Apple said the things mentioned here have been patched since 2013
+# Source: https://www.macrumors.com/2017/03/07/apple-wikileaks-vault-7-patched/
+
 
 """
